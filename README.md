@@ -1,0 +1,1 @@
+# TW2025-Grupa2Semigrupa2
