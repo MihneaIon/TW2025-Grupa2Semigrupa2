@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #list1 li{
+        display: inline;
+        padding-right: 50px;
+    }
+    div{
+        display: block;
+    }
+    #list1{
+        text-align: center;
+    }
+    .img-with-text{
+        text-align: center;
+    }
+    #list2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #list2 li{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .hidden{
+        display: none;
+    }
+    #button{
+        border: none;
+        background-color: white;
+        height: auto;
+        width: auto;
+        cursor: pointer;
+    }
+    #list2 li p{
+        font-size: small;
+    }
+    #Mac{
+        font-size: 80px;
+    }
+    #div2{
+        margin-left: 100px;
+        display: block;
+    }
+    #list3 li{
+        display: inline;
+        list-style: none;
+        padding: 0;
+    }
+    .button1{
+        padding: 10px 24px;
+        border: none;
+        background: none;
+        border-radius: 25px;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all .25s ease;
+
+    }
+    .button1:active{
+        background: black;
+        color: white;
+    }
+    .button1{
+    padding: 10px 24px;
+    border: none;
+    background: none;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .25s ease;
+    }
+    input[type="radio"]:checked + .button1 {
+    background: black;
+    color: white;
+    }
+
+    #list3{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 12px;
+        background-color: #f5f5f7;
+        padding: 12px;
+        border-radius: 40px;
+        width: fit-content;
+        margin: 20px 0;
+    }
+    </style>
+</head>
+<body>
+    <div>
+    <ul id="list1">
+        <li></li>
+        <li>Mac</li>
+        <li>Ipad</li>
+        <li>Iphone</li>
+        <li>Watch</li>
+        <li>AirPods</li>
+        <li>Divertisment</li>
+        <li>Asistenta</li>
+        <li>De unde cumperi</li>
+        <li>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <input type="text" placeholder="Cauta pe apple.com" name="search" class="hidden" id="search">
+            <button type="submit" id="button"><i class="fa fa-search"></i></button>
+        </li>
+    </ul>
+    <ul id="list2">
+        <li>
+            <div class="img-with-text">
+             <img src="./icon1.svg">
+             <p>MacBook Air</p>
+             </div>
+        </li>
+        <li>
+            <div class="img-with-text">
+             <img src="./icon2.svg">
+             <p>MacBook Pro</p>
+             </div>
+        </li>
+        <li>
+            <div class="img-with-text">
+             <img src="./icon6.svg">
+             <p>IMac</p>
+             </div>
+        </li>
+        <li>
+            <div class="img-with-text">
+             <img src="./icon3.svg">
+             <p>Mac Mini</p>
+             </div>
+        </li>
+        <li>
+            <div class="img-with-text">
+             <img src="./icon5.svg">
+             <p>Mac Studio</p>
+             </div>
+        </li>
+        <li>
+            <div class="img-with-text">
+             <img src="./icon4.svg">
+             <p>Mac Pro</p>
+             </div>
+        </li>
+        <li>
+            <div class="img-with-text">
+             <img src="./icon7.svg">
+             <p>Compara</p>
+             </div>
+        </li>
+        <li>
+            <div class="img-with-text">
+             <img src="./icon8.svg">
+             <p>Monitoare</p>
+             </div>
+        </li>
+    </ul>
+    </div>
+    <div id="div2">
+    <h1 id="Mac">Mac</h1>
+    <ul id="list3" role="tablist">
+    <li class="list3_button">
+        <input type="radio" name="tabs" id="tab1" hidden checked>
+        <label for="tab1" class="button1">Toate produsele</label>
+    </li>
+    <li class="list3_button">
+        <input type="radio" name="tabs" id="tab2" hidden>
+        <label for="tab2" class="button1">Laptopuri</label>
+    </li>
+    <li class="list3_button">
+        <input type="radio" name="tabs" id="tab3" hidden>
+        <label for="tab3" class="button1">Desktopuri</label>
+    </li>
+    <li class="list3_button">
+        <input type="radio" name="tabs" id="tab4" hidden>
+        <label for="tab4" class="button1">Monitoare</label>
+    </li>
+    </ul>
+    </div>
+</body>
+</html>
