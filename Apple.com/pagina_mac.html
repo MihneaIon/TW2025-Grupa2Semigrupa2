@@ -79,10 +79,6 @@
     cursor: pointer;
     transition: all .25s ease;
     }
-    input[type="radio"]:checked + .button1 {
-    background: black;
-    color: white;
-    }
 
     #list3{
         display: flex;
@@ -95,6 +91,136 @@
         width: fit-content;
         margin: 20px 0;
     }
+
+
+
+
+    #list_produse img{
+    width: 405px;
+    height: 275px;
+}
+#list4{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+#list4 li{
+    margin-right: 80px;
+}
+figure{
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;      
+    text-align: center;                      
+    max-width: 350px;         
+    margin: 0 auto;
+}
+figure h4, figure p{
+    margin-top: 0;
+}
+.afla_mai_multe{
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 980px; 
+    border: none;
+    cursor: pointer;
+    background-color: #007AFF;
+    color: white;
+}
+.cumpara{
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 980px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    color: #007AFF;
+}
+.img_button{
+    display: flex;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.color-circle{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    overflow: hidden;     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+.culori{
+    display: flex;
+    justify-content: center;
+}
+.culori span img{
+    width: 13px;
+    height: 13px;
+    object-fit: cover; 
+    display: block;
+}
+#btn-left, #btn-right{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}   
+#list_produse{
+    position: relative;
+}
+#arrow_btn{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 50px;    
+    margin-right: 60px; 
+}
+
+
+
+
+
+.button1 {
+    padding: 10px 24px;
+    border: none;
+    background: none;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .25s ease;
+}
+
+input[type="radio"]:checked + ul + #list_produse + .button1,
+input[type="radio"]:checked + .button1 {
+    background: black;
+    color: white;
+}
+#tab1:checked + #tab2 ~ #list3 li:nth-child(1) label,
+#tab2:checked ~ #list3 li:nth-child(2) label,
+#tab3:checked ~ #list3 li:nth-child(3) label,
+#tab4:checked ~ #list3 li:nth-child(4) label {
+    background-color: black;
+    color: white;
+}
+#tab1:checked ~ #list_produse {
+    display: block;
+}
+
+#list_produse {
+    display: none;
+}
+
     </style>
 </head>
 <body>
@@ -168,24 +294,162 @@
     </div>
     <div id="div2">
     <h1 id="Mac">Mac</h1>
+
+
+    <input type="radio" name="tabs" id="tab1" hidden checked>
+    <input type="radio" name="tabs" id="tab2" hidden>
+    <input type="radio" name="tabs" id="tab3" hidden>
+    <input type="radio" name="tabs" id="tab4" hidden>
+
     <ul id="list3" role="tablist">
-    <li class="list3_button">
-        <input type="radio" name="tabs" id="tab1" hidden checked>
-        <label for="tab1" class="button1">Toate produsele</label>
-    </li>
-    <li class="list3_button">
-        <input type="radio" name="tabs" id="tab2" hidden>
-        <label for="tab2" class="button1">Laptopuri</label>
-    </li>
-    <li class="list3_button">
-        <input type="radio" name="tabs" id="tab3" hidden>
-        <label for="tab3" class="button1">Desktopuri</label>
-    </li>
-    <li class="list3_button">
-        <input type="radio" name="tabs" id="tab4" hidden>
-        <label for="tab4" class="button1">Monitoare</label>
-    </li>
+        <li class="list3_button">
+            <label for="tab1" class="button1">Toate produsele</label>
+        </li>
+        <li class="list3_button">
+            <label for="tab2" class="button1">Laptopuri</label>
+        </li>
+        <li class="list3_button">
+            <label for="tab3" class="button1">Desktopuri</label>
+        </li>
+        <li class="list3_button">
+            <label for="tab4" class="button1">Monitoare</label>
+        </li>
     </ul>
+
+    <div id="list_produse">
+    <ul id="list4">
+       <li> 
+        <figure>
+            <button class="img_button"><img src="./macair.jpg" ></button>   
+            <div class="culori">
+                <span class="color-circle" style="background-color: #D5EDF8"></span>
+                <span class="color-circle" style="background-color: #DCDCDC"></span>
+                <span class="color-circle" style="background-color: #FAEBD7"></span>
+                <span class="color-circle" style="background-color: black"></span>
+            </div>
+            <h3 style="margin-top: 60px;">MacBook Air de 13” și 15”</h3>
+            <h4>Cip M4</h4>
+            <p>Fantastic de subțire și rapid pentru lucru, joacă sau muncă de creație, oriunde ai fi.</p>
+            <div>
+            <button class="afla_mai_multe">Află mai multe</button>
+            <button class="cumpara">Cumpără ></button>
+            </div>
+        </figure>
+        </li>
+
+
+        <li> 
+        <figure>
+            <button class="img_button"><img src="./macpro.jpg" ></button>   
+            <div class="culori">
+                <span class="color-circle" style="background-color: black"></span>
+                <span class="color-circle" style="background-color: #DCDCDC"></span>
+            </div>
+            <p style="color: #B22222; font-size: 10px; margin-top: 20px;" >Noul 14″ cu M5</p>
+            <h3>MacBook Pro de 14” și 16”</h3>
+            <h4>Cipurile M5, M4 Pro sau M4 Max</h4>
+            <p>Cele mai avansate laptopuri Mac pentru cele mai solicitante sarcini de lucru.</p>
+            <div>
+            <button class="afla_mai_multe">Află mai multe</button>
+            <button class="cumpara">Cumpără ></button>
+            </div>
+        </figure>
+        </li>
+
+        <li> 
+        <figure>
+            <button class="img_button"><img src="./imac.jpg" ></button>   
+            <div class="culori">
+                <span class="color-circle"><img class="img_culori" src="./albastru.png"></span>
+                <span class="color-circle"><img class="img_culori" src="./mov.png"></span>
+                <span class="color-circle"><img class="img_culori" src="./roz.png"></span>
+                <span class="color-circle"><img class="img_culori" src="./portocaliu.png"></span>
+                <span class="color-circle"><img class="img_culori" src="./galben.png"></span>
+                <span class="color-circle"><img class="img_culori" src="./verde.png"></span>
+                <span class="color-circle" style="background-color: #DCDCDC"></span>
+            </div>
+            <h3 style="margin-top: 60px;">iMac</h3>
+            <h4>Cip M4</h4>
+            <p>Un desktop all-in-one spectaculos pentru creativitate și productivitate.</p>
+            <div>
+            <button class="afla_mai_multe">Află mai multe</button>
+            <button class="cumpara">Cumpără ></button>
+            </div>
+        </figure>
+        </li>
+
+        <li> 
+        <figure>
+            <button class="img_button"><img src="./macmini.jpg" ></button>   
+            <h3 style="margin-top: 80px;">Mac mini</h3>
+            <h4>Cip M4 sau M4 Pro</h4>
+            <p>Cel mai mic și mai accesibil Mac, dar cu performanțe de uriaș.</p>
+            <div>
+            <button class="afla_mai_multe">Află mai multe</button>
+            <button class="cumpara">Cumpără ></button>
+            </div>
+        </figure>
+        </li>
+
+        <li> 
+        <figure>
+            <button class="img_button"><img src="./macstudio.jpg" ></button>   
+            <h3 style="margin-top: 80px;">Mac studio</h3>
+            <h4>Cip M4 Max sau M3 Ultra</h4>
+            <p>Performanță de top și super conectivitate pentru sarcini de lucru profesionale.</p>
+            <div>
+            <button class="afla_mai_multe">Află mai multe</button>
+            <button class="cumpara">Cumpără ></button>
+            </div>
+        </figure>
+        </li>
+
+        <li> 
+        <figure>
+            <button class="img_button"><img src="./macpro2.jpg" ></button>   
+            <h3 style="margin-top: 80px;">Mac Pro</h3>
+            <h4>Cip M2 Ultra</h4>
+            <p>Stație de lucru profesională cu expansiune PCIe pentru sarcini solicitante de lucru.</p>
+            <div>
+            <button class="afla_mai_multe">Află mai multe</button>
+            <button class="cumpara">Cumpără ></button>
+            </div>
+        </figure>
+        </li>
+
+        <li> 
+        <figure>
+            <button class="img_button"><img src="./studio_display_5958bd8d8_2x.jpg" ></button>   
+            <h3 style="margin-top: 120px;">Studio Display</h3>
+            <p>Un ecran Retina 5K cu sistem audio și cameră de excepție.</p>
+            <div>
+            <button class="afla_mai_multe">Află mai multe</button>
+            <button class="cumpara">Cumpără ></button>
+            </div>
+        </figure>
+        </li>
+
+        <li> 
+        <figure>
+            <button class="img_button"><img src="./pro_display_808ebd8d9_2x.jpg" ></button>   
+            <h3 style="margin-top: 120px;">Pro Display XDR</h3>
+            <p>Un ecran avansat XDR 6K pentru fluxuri profesionale de lucru.</p>
+            <div>
+            <button class="afla_mai_multe">Află mai multe</button>
+            <button class="cumpara">Cumpără ></button>
+            </div>
+        </figure>
+        </li>   
+        
+    </ul>
+    <div id="arrow_btn">
+        <button id="btn-left"><</button>
+        <button id="btn-right">></button>
     </div>
+    </div>
+
+
+
+</div>
 </body>
 </html>
