@@ -1,0 +1,70 @@
+/* Bara meniu fixată sus */
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 15px 40px;
+    margin: 0;
+    list-style: none;
+    background-color: rgba(17,17,17,0.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    backdrop-filter: blur(8px);
+
+    /* animație pentru lungire la hover */
+    transition: height 0.3s ease;
+    height: 50px; /* înălțimea inițială */
+}
+
+/* La hover peste meniu, bara se lungește */
+ul:hover {
+    height: 80px; /* bara devine mai înaltă */
+}
+
+/* Logo */
+ul .logo {
+    width: 25px;
+    height: auto;
+}
+
+/* Elemente li */
+ul li {
+    position: relative;           /* pentru linia animată */
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Slide-down subtil la hover pentru fiecare text */
+ul li:hover {
+    transform: translateY(5px);
+    color: #ccc;
+}
+
+/* Linia animată sub fiecare element */
+ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #06c;      /* albastru Apple */
+    transition: width 0.3s ease, transform 0.3s ease;
+}
+
+/* Linia se întinde la hover, dar nu coboară */
+ul li:hover::after {
+    width: 100%;
+}
+
+
+
+
+
