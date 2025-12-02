@@ -166,7 +166,7 @@ figure h4, figure p{
     object-fit: cover; 
     display: block;
 }
-#btn-left, #btn-right{
+#btn-left, #btn-right, .plus_btn{
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -221,6 +221,227 @@ input[type="radio"]:checked + .button1 {
     display: none;
 }
 
+
+
+
+    #img1{
+        background-image: url(img1.jpg);
+        background-size: 405px 740px;
+        border-radius: 30px;
+        color: white;
+        float: left;   
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        cursor: pointer;
+        position: relative;
+    }
+    #img1 p, #img2 p, #img3 p, #img4 p, #img5 p, #img6 p, #img7 p, #img8 p{
+        margin-left: 30px;
+    }
+    .plus_btn{
+        align-items: self-end;
+        justify-content:flex-end;
+        position: absolute;
+        bottom: 10px;   
+        right: 10px;
+        background-color: white;
+        color: black;
+        opacity: 20%;
+    }
+
+    #img2{
+        background-image: url(img2.jpg);
+        background-size: 405px 740px;
+        border-radius: 30px;
+        color: white;
+        float: left;   
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        cursor: pointer;
+        position: relative;
+    }
+    #img3, #img4, #img5, #img6, #img7, #img8{
+        border-radius: 30px;
+        color: white;
+        float: left;   
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        cursor: pointer;
+        position: relative;
+    }
+    #img3{
+        background-image: url(img3.jpg);
+        background-size: 405px 740px;
+    }
+    #img4{
+        background-image: url(img4.jpg);
+        background-size: 405px 740px;
+    }
+    #img5{
+        background-image: url(img5.jpg);
+        background-size: 405px 740px;
+    }
+    #img6{
+        background-image: url(img6.jpg);
+        background-size: 405px 740px;
+    }
+    #img7{
+        background-image: url(img7.jpg);
+        background-size: 405px 740px;
+    }
+    #img8{
+        background-image: url(img8.jpg);
+        background-size: 405px 740px;
+    }
+    #list5{
+        display: flex;
+        list-style: none;
+        padding: 0;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+    #list5 li{
+        margin-right: 30px;
+    }
+    .cumpara:hover{
+        text-decoration: underline;
+    }
+
+
+    /*buton1*/
+
+    #check:checked + label .arrow {
+        transform: rotate(90deg);
+    }
+    label .arrow {
+        transform: rotate(-90deg);
+    }
+
+    .arrow {
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+
+    #text {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        text-align: left;
+    }
+
+    .check-btn label{
+        border-bottom: gray 1px solid;
+        transition: border 0.3s ease;
+        margin-top: 0;
+        padding: 10px 0; 
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    #check:checked ~ #text {
+        max-height: 400px;
+        border-bottom: gray 1px solid;
+    }
+
+    #check:checked + label{
+        border-bottom: 0;
+    }
+
+    /*buton2*/
+
+    #check2:checked + label .arrow {
+        transform: rotate(90deg);
+    }
+    label .arrow {
+        transform: rotate(-90deg);
+    }
+
+    #check2:checked ~ #text2 {
+        max-height: 400px;
+        border-bottom: gray 1px solid;
+    }
+
+    .arrow {
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+
+    #text2 {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        text-align: left;
+
+    }
+
+    #check2:checked ~ #text2 {
+        max-height: 400px;
+        border-bottom: gray 1px solid;
+    }
+
+    #check2:checked + label{
+        border-bottom: 0;
+    }
+
+    /*buton3*/
+
+    #check3:checked + label .arrow {
+        transform: rotate(90deg);
+    }
+    label .arrow {
+        transform: rotate(-90deg);
+    }
+
+    #check3:checked ~ #text2 {
+        max-height: 400px;
+        border-bottom: gray 1px solid;
+    }
+
+    .arrow {
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+
+    #text3 {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        text-align: left;
+
+    }
+
+    #check3:checked ~ #text3 {
+        max-height: 400px;
+        border-bottom: gray 1px solid;
+    }
+
+    #check3:checked + label{
+        border-bottom: 0;
+    }
+
+    #div5{
+        display: flex;
+        justify-content: center;
+    }
+
+    #div5 figure{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    #div-figure{
+        display: flex;
+        width: ;
+        height: ;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
     </style>
 </head>
 <body>
@@ -450,6 +671,155 @@ input[type="radio"]:checked + .button1 {
 
 
 
+    <div id="div3">
+    <h1 style="font-size: 60px;">Afla mai multe despre Mac.</h1>
+
+    <ul id="list5">
+        <li>
+        <figure id="img1" style="width: 405px; height: 740px;">
+            <p style="margin-top: 30px;">Performanta si autonomia bateriei</p>
+            <p style="font-size: 20px; font-weight: bold; margin-bottom: 0;">Rezolva totul rapid.</p>
+            <p style="font-size: 20px; font-weight: bold; margin-top: 0;">Si de oriunde.</p>
+            <button class="plus_btn">+</button>
+        </figure>
+        </li>
+
+        <li>
+        <figure id="img2" style="width: 405px; height: 740px;">
+            <p style="margin-top: 30px;">Creat pentru AI</p>
+            <p style="font-size: 20px; font-weight: bold; margin-bottom: 0;">Inteligent. Sigur.</p>
+            <p style="font-size: 20px; font-weight: bold; margin-top: 0;">Direct pe dispozitiv.</p>
+            <button class="plus_btn">+</button>
+        </figure>
+        </li>
+
+        <li>
+        <figure id="img3" style="width: 405px; height: 740px;">
+            <p style="margin-top: 30px; color: black;">Mac + IPhone</p>
+            <p style="font-size: 20px; font-weight: bold; margin-bottom: 0; color: black;">Impreuna fac minuni</p>
+            <button class="plus_btn">+</button>
+        </figure>
+        </li>
+
+        <li>
+        <figure id="img4" style="width: 405px; height: 740px;">
+            <p style="margin-top: 30px; color: black;">Compatibilitate</p>
+            <p style="font-size: 20px; font-weight: bold; margin-bottom: 0; color: black;">Mac ruleaza <br> aplicatiile tale</p>
+            <p style="font-size: 20px; font-weight: bold; margin-top: 0; color: black;">preferate.</p>
+            <button class="plus_btn">+</button>
+        </figure>
+        </li>
+
+        <li>
+        <figure id="img5" style="width: 405px; height: 740px;">
+            <p style="margin-top: 30px; color: black;">macOS si Apple Intelligence</p>
+            <p style="font-size: 20px; font-weight: bold; margin-bottom: 0; color: black;">Usor de folosit.</p>
+            <p style="font-size: 20px; font-weight: bold; margin-top: 0; color: black;">Usor de iubit.</p>
+            <button class="plus_btn">+</button>
+        </figure>
+        </li>
+
+        <li>
+        <figure id="img6" style="width: 405px; height: 740px;">
+            <p style="margin-top: 30px;">Confidentialitate si securitate</p>
+            <p style="font-size: 20px; font-weight: bold; margin-bottom: 0;">Ce faci tu</p>
+            <p style="font-size: 20px; font-weight: bold; margin-top: 0;">e doar treaba ta.</p>
+            <button class="plus_btn">+</button>
+        </figure>
+        </li>
+
+        <li>
+        <figure id="img7" style="width: 405px; height: 740px;">
+            <p style="margin-top: 30px;">Durabilitate</p>
+            <p style="font-size: 20px; font-weight: bold; margin-bottom: 0;">Conceput sa treaca testul</p>
+            <p style="font-size: 20px; font-weight: bold; margin-top: 0;">timpului.</p>
+            <button class="plus_btn">+</button>
+        </figure>
+        </li>
+
+        <li>
+        <figure id="img8" style="width: 405px; height: 740px;">
+            <p style="margin-top: 30px;">Valorile Apple</p>
+            <p style="font-size: 20px; font-weight: bold; margin-bottom: 0;">Valorile noastre <br> se regasesc</p>
+            <p style="font-size: 20px; font-weight: bold; margin-top: 0;">in tot ce facem.</p>
+            <button class="plus_btn">+</button>
+        </figure>
+        </li>
+
+
+    </ul>
+
+     <div id="arrow_btn">
+        <button id="btn-left"><</button>
+        <button id="btn-right">></button>
+    </div>
+    
+    </div>
+
+</div>
+
+<div id="div4" style="background-color: #F5F6F7; width: 100%; margin-top: 30px; margin-bottom: 30px; height: 800px;">
+
+    <h1 style="font-size: 60px; margin-left: 90px;">Esentiale pentru Mac.</h1>
+
+    <ul style="list-style: none; display: flex; gap: 20px;">
+        <div style="width: 650px; cursor: pointer; height: 500px; margin-left: 50px; border-radius: 28px; background-color: #ffffff; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; padding-top: 60px; text-align: center;">
+            <h3 style="font-size: 32px; font-weight: 600; color: #1d1d1f; margin: 0 0 12px 0;">AirPods</h3>
+            <p style="font-size: 17px; line-height: 1.45; margin: 0 0 20px 0;">Descopera toate modelele AirPods si gaseste-le pe cele care ti <br> se potrivesc.</p>
+            <button class="cumpara">Afla mai multe ></button>
+            <img src="im1.jpg" style="width: 650px; height: 350px; margin-top: 30px;">
+        </div>
+
+        <div style="width: 650px; cursor: pointer; height: 500px; margin-right: 30px; border-radius: 28px; background-color: #ffffff; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; padding-top: 60px; text-align: center;">
+            <h3 style="font-size: 32px; font-weight: 600; color: #1d1d1f; margin: 0 0 12px 0;">AirPods</h3>
+            <p style="font-size: 17px; line-height: 1.45; margin: 0 0 20px 0;">Descopera toate modelele AirPods si gaseste-le pe cele care ti <br> se potrivesc.</p>
+            <button class="cumpara">Afla mai multe ></button>
+            <img src="im2.png" style="width: 650px; height: 350px; margin-top: 30px;">
+        </div>
+    </ul>
+
+</div>
+
+
+
+
+<h1 style="font-size: 60px; margin-left: 90px; margin-bottom: 30px;">Descopera lumea Apple.</h1>
+<div id="div5">
+    <div id="div-figure" style="border-radius: 28px; background-color: #F5F6F7; display: flex; flex-direction: column; width: 1200px; height: 800px;">
+        
+        <figure class="check-btn" style="margin-top: 150px;">
+            <input type="radio" name="radio" id="check" checked hidden>
+            <label for="check" style="cursor: pointer; font-size: 30px; display: flex; gap: 10px;">
+                Mac si iPhone
+                <span class="arrow"> > </span>
+            </label>
+            <p id="text">
+            Răspunde la apelurile și mesajele primite pe iPhone direct de pe Mac. Folosește Clipboard universal pentru a copia imagini, video sau text de pe iPhone, apoi lipește-le în altă aplicație, pe Mac-ul tău din apropiere. Iar cu iCloud, poți accesa fișierele tale atât de pe iPhone, cât și de pe Mac. Și multe altele.
+            </p>
+        </figure>
+
+        <figure class="check-btn">
+            <input type="radio" name="radio" id="check2"  hidden>
+            <label for="check2" style="cursor: pointer; font-size: 30px; display: flex; gap: 10px;">
+                Mac si iPad
+                <span class="arrow"> > </span>
+            </label>
+            <p id="text2">
+            Schițează pe iPad și vezi totul, imediat, pe Mac. Sau folosește-ți iPad-ul ca pe un al doilea ecran. Astfel, poți lucra pe un ecran, folosindu-l pe celălalt ca referință. Poți începe un proiect Final Cut Pro pe iPad, ca să-l continui apoi pe Mac. 
+            </p>
+        </figure>
+
+        <figure class="check-btn">
+            <input type="radio" name="radio" id="check3"  hidden>
+            <label for="check3" style="cursor: pointer; font-size: 30px; display: flex; gap: 10px;">
+                Mac si Apple Watch
+                <span class="arrow"> > </span>
+            </label>
+            <p id="text3">
+            Te loghezi automat pe Mac atunci când porți Apple Watch cu Auto deblocare. Nu e nevoie să introduci nicio parolă.
+            </p>
+        </figure>
+    </div>
 </div>
 </body>
 </html>
