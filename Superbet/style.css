@@ -1,0 +1,472 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:   #f2f2f5;
+}
+.barastanga {
+    flex: 0 0 160px;
+    width: 240px;
+    background-color:   #f2f2f5;
+    padding-top: 20px;
+    position: sticky;
+    top: 85px; 
+    flex-shrink: 0;
+    align-self: flex-start;}
+h2{
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    color: #666;}
+.meniu{
+    list-style: none; 
+    padding: 0;
+    margin: 0;}
+.element{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    color: #363636;
+    cursor: pointer;
+    font-size:small;}
+.element a{
+    text-decoration: none;
+    color:#363636;
+    
+}
+.element:hover{
+    background: #e4e6eb;}
+.body{
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 20px;
+    background-color:   #f2f2f5;
+}
+.element.activ {
+    background: #ffffff;
+    color: #d6000e; 
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+.butoncota {
+    margin-right: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 6px; 
+    min-width: 90px; 
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    line-height: 1;
+}
+.butoncota:hover {
+  background: #e0e0e0;}
+
+.meci {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 6px 15px; 
+    background-color: #fff; 
+    margin-bottom: 15px;
+    margin-top: 0px;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.meci:hover { 
+    background-color: #fafafa; 
+    cursor: pointer; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+.echipa { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;  
+    line-height: 1.5;
+    margin: 2px 0; }
+.coloanascoruri {
+    display: flex;
+    flex-direction: column;
+    text-align:right;
+    margin-right: 50px; 
+    gap: 2px;
+    width: 30px;}
+ .coloanascoruri .echipa {
+    justify-content: center; 
+}
+
+.coloanascoruri .echipa .scor {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 0;
+}
+.numesiminut {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-right: 20px; 
+    flex-shrink: 0;}
+
+.minutjoc .statustext {
+    color: #3ca50f;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.cotepariuri{
+    display: flex;
+    text-align: right;
+    gap: 4px; 
+    margin-right: 30px;
+    flex-shrink: 0;
+    align-self: flex-end;
+    }
+.repriza {
+    font-size: 11px;
+    color: #999;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+.partesus h1 {
+    color: #d6000e; 
+    font-size: 28px; 
+    font-weight: 900; 
+    margin: 0;
+     }
+.filtre{
+    display: flex;
+    gap: 15px;
+}
+.butonsus {
+    padding: 8px 15px;
+    border: none; 
+    background-color: #fff; 
+    color: #444; 
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    font-weight: 600; 
+    cursor: pointer;
+    border-radius: 8px; }
+.butonsus:first-child {
+    background-color: #d6000e; 
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px; 
+}
+.partesus {
+    top: 81px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 10px 30px 0; 
+    position: sticky;
+    z-index: 100; background-color:   #f2f2f5;;
+}
+.selectsortare {
+    background-color: #f0f0f0; 
+    border-radius: 8px; 
+    border-left: 1px solid #ddd; 
+    border-right: 1px solid #ddd; }
+.meciuri { 
+    flex: 0 0 700px; }
+.containerliga { 
+    background-color:   #f2f2f5;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 40px;}
+.ligaheader { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px 15px;
+    margin-top: 20px; 
+    margin-bottom: 0; 
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+    border-bottom: 1px solid #e0e0e0;
+    border: none;
+    box-shadow: none;
+    background-color:   #f2f2f5;
+ }
+
+.meci:hover { 
+    background-color: #fafafa; }
+
+.numeminut {
+    width: 60px; 
+    text-align: left;
+    flex-shrink: 0;
+    padding-top: 2px; 
+}
+.meci .detaliimeci { 
+    flex-grow: 1; 
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: 10px;
+ }
+ .detaliistanga {
+    flex: 1; 
+}
+ .stangameci {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start; 
+    flex-grow: 1; 
+    max-width: 50%; 
+    flex-shrink: 1;
+}
+ .clasanume{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-left: 10px;
+ }
+ .scorurimeci{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    gap: 4px;
+    font-size: 14px;
+    color: #444;
+ }
+
+.meci .echipa {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;}
+
+.meci .echipa .nume {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;}
+
+.meci .echipa .scor {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    min-width: 20px; 
+    text-align: right;
+margin-left:10px}
+
+.butoncota .tip { 
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 2px;
+    margin-right: 5px;;}
+
+.butoncota .valoare { 
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;}
+.baradreapta {
+    flex: 0 0 280px;
+    width: 280px; 
+    padding: 0;
+    position: sticky;
+    top: 85px; 
+    flex-shrink: 0;
+    align-self: flex-start;}
+ .cauta2 {
+    display: flex; 
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;}
+.camp {
+    flex-grow: 1; 
+    padding: 10px 15px;
+    border: none; 
+    font-size: 14px;
+    outline: none; }
+.bilets {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    height: 100px;
+}
+.biletgol {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+.cauta2 .lupa { 
+    background-color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #666;
+}
+.textlung {
+    flex-basis: 100%; 
+    padding: 25px;
+    margin-top: 20px; 
+    background-color: #f2f2f5;
+}
+.textlung h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.textlung h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.textlung p, .textlung ul, .textlung li, .textlung ol {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 10px;
+}
+.textlung ul,
+.textlung ol {
+     padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.logo{
+    font-weight: bold;}
+
+.barasus {
+    font-weight: bold;
+    top: 0px;
+    position: sticky;
+    background: #f7eaea;
+    padding: 10px 15px;
+}
+
+.continut {
+    background: #fff;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);}
+
+.containerlogo {
+    flex: 0 0 auto;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 2px;}
+
+.dreaptah {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #e30613;
+    margin-right: 20px;
+    }
+
+.meniuh {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.95em;}
+
+.meniuh a {
+    text-decoration: none;
+    color: #111;
+    position: relative;
+    padding: 6px 0;
+}
+
+.numar {
+    background: red;
+    color: white;
+    font-size: 0.7em;
+    padding: 2px 6px;
+    border-radius: 10px;
+    margin-left: 4px;
+    font-weight: bold;}
+
+.despartire {
+    width: 1px;
+    height: 18px;
+    background: #ccc;
+    margin: 0 8px;}
+
+.emoji {
+    font-size: 1em;
+    margin-right: 4px;}
+
+.meniuutilizator {
+    display: flex;
+    align-items: center;
+    gap: 15px;}
+
+.cauta {
+    background: #f0f0f0;
+    border: none;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    font-size: 1.1em;
+    cursor: pointer;}
+
+.cauta:hover {
+     background: #e0e0e0;}
+
+.depunere {
+    background: #f0f0f0;
+    color: #111;
+    border: none;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;}
+
+.depunere:hover {
+    background: #e0e0e0;}
+
+.utilizator {
+    display: flex;
+    align-items: center;
+    gap: 8px;}
+
+.nume {
+    font-weight: 500;}
+
+.balanta {
+    font-size: 0.85em;
+    color: #666;
+}
+
+.poza {width: 32px;
+    height: 32px;
+    background: url('https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png') no-repeat center/cover; 
+    border-radius: 50%;}
+
