@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Audi – Mobilitate electrică</title>
+
+<style>
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0b0c0e;
+  --panel:#0f1113;
+  --muted:#bfbfbf;
+  --muted2:#9b9b9b;
+  --text:#ffffff;
+  --card:#121214;
+  --container:1200px;
+  --radius:14px;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family: "Arial", sans-serif;
+  line-height:1.5;
+}
+
+.header {
+  background:#000;
+  height:64px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+.header-inner{
+  width:100%;
+  max-width:var(--container);
+  padding:0 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.menu-left{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:#ffffff;
+}
+.menu-left span{font-size:15px;color:#c9c9c9}
+.menu-icon{
+  width:20px;height:14px;position:relative;
+}
+.menu-icon span{
+  position:absolute;left:0;right:0;height:2px;background:#fff;
+}
+.menu-icon span:nth-child(1){top:0}
+.menu-icon span:nth-child(2){top:6px}
+.menu-icon span:nth-child(3){top:12px}
+
+.logo-audi img{
+  height:22px;
+}
+
+.audi-image{
+  width:100%;
+  height:520px;
+  background-image:url('Audi Mobilitatea Electrica 1.webp');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  position:relative;
+}
+
+.audi-title{
+  font-size:72px;
+  font-weight:300;
+  color:rgba(238, 246, 248, 0.893);
+  line-height:1.1;
+  text-align:right;
+  position:absolute;
+  right:60px;
+
+  top:20%;                
+  transform:translateY(-30%);
+
+  text-shadow:0 0 12px rgba(0,0,0,0.4);
+}
+
+.masini{
+  width:100%;
+  background:#14171b;
+  padding:14px 20px;
+}
+.masini-inner{
+  max-width:var(--container);
+  margin:auto;
+  color:#c7c7c7;
+  font-size:14px;
+}
+.masini-inner span{color:#ffffff}
+
+.submenu{
+  width:100%;
+  background:#0f1113;
+  padding:16px 20px;
+  border-top:1px solid #1c1d20;
+}
+.submenu-inner{
+  max-width:var(--container);
+  margin:auto;
+  display:flex;
+  gap:40px;
+}
+.submenu-inner div{
+  color:#d0d0d0;
+  font-size:15px;
+  cursor:default;
+}
+
+.section-electric{
+  width:100%;
+  max-width:var(--container);
+  margin:60px auto;
+  padding:0 20px;
+}
+.section-electric h2{
+  text-align:center;
+  font-size:36px;
+  font-weight:300;
+  margin-bottom:20px;
+}
+.section-electric .intro-text{
+  text-align:center;
+  color:#c7c7c7;
+  max-width:900px;
+  margin:0 auto 50px auto;
+  line-height:1.6;
+  font-size:16px;
+}
+
+.electric-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:28px;
+}
+.electric-card{
+  background:#121417;
+  border-radius:18px;
+  overflow:hidden;
+}
+.electric-card img{
+  width:100%;height:240px;object-fit:cover;
+}
+.electric-card h3{
+  font-size:22px;
+  font-weight:300;
+  margin:16px 0 10px;
+  padding:0 16px;
+}
+.electric-card a{
+  padding:0 16px 20px;
+  display:inline-block;
+  color:#ffffff;
+  text-decoration:none;
+  font-size:15px;
+  border-bottom:1px solid #fff;
+}
+.electric-card a span{margin-left:6px}
+
+.footer{
+  background:#000;
+  padding:40px 20px;
+  margin-top:60px;
+  color:#999;
+}
+.footer-inner{
+  max-width:var(--container);
+  margin:auto;
+}
+.footer-columns{
+  display:flex;
+  flex-wrap:wrap;
+  gap:40px;
+}
+.footer-col h4{margin-bottom:8px;color:#cfcfcf}
+.footer-col a{
+  display:block;
+  color:#888;
+  margin:4px 0;
+  text-decoration:none;
+  font-size:14px;
+}
+.legal{
+  margin-top:20px;
+  font-size:13px;
+  color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="menu-left">
+      <div class="menu-icon">
+        <span></span><span></span><span></span>
+      </div>
+      <span>Meniu</span>
+    </div>
+
+    <div class="logo-audi">
+      <img src="audi emblema 2.jpeg" alt="Audi Logo">
+    </div>
+
+    <div style="width:60px"></div>
+  </div>
+</header>
+
+<section class="audi-image">
+  <div class="audi-title">Mobilitatea Electrică</div>
+</section>
+
+<div class="masini">
+  <div class="masini-inner">
+    Modele &nbsp;>&nbsp; <span>Mobilitatea electrică</span>
+  </div>
+</div>
+
+<div class="submenu">
+  <div class="submenu-inner">
+    <div>Viitorul este electric</div>
+    <div>Modele electrice</div>
+    <div>Modele hibride plug-in</div>
+  </div>
+</div>
+
+<section class="section-electric">
+  <h2>Audi și mobilitatea electrică</h2>
+
+  <div class="intro-text">
+    <p style="text-align: center;">
+    Audi își extinde flota de automobile electrice cu modelele Audi e-tron, Audi e-tron Sportback, Audi e-tron GT,
+    Audi Q4 e-tron și Audi Q4 Sportback e-tron. În plus, Audi oferă și modele hibride plug-in, ce îmbină
+    avantajele motorului clasic cu ardere internă, cu avantajele motoarelor electrice. Astfel, Audi oferă fiecărui client
+    soluția optimă de mobilitate modernă.</p>
+  </div>
+
+  <div class="electric-grid">
+
+    <div class="electric-card">
+      <img src="audi poza 2 stanga.webp" alt="">
+      <h3>Automobilele electrice Audi</h3>
+      <a href="scris sub poza 2">Descoperiți acum detaliile <span>›</span></a>
+    </div>
+
+    <div class="electric-card">
+      <img src="audi poza 3 mijloc.webp" alt="">
+      <h3>Modele hibride plug-in</h3>
+      <a href="scris sub poza 3">Descoperiți acum detaliile <span>›</span></a>
+    </div>
+
+    <div class="electric-card">
+      <img src="audi poza 4 dreapta.webp" alt="">
+      <h3>Viitorul este electric</h3>
+      <a href="scris sub poza 4">Descoperiți acum detaliile <span>›</span></a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+
+    <div class="footer-columns">
+
+      <div class="footer-col">
+        <h4>Modele</h4>
+        <a href="sub el">Toate Modelele</a>
+        <a href="sub el">Modele sport Audi</a>
+        <a href="sub el">Modele electrice</a>
+        <a href="sub el">Hibride plung-in</a>
+        <a href="sub el">E-mobilitate</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Consiliere si achizitionare</h4>
+        <a href="sub el">Variante de caroserie</a>
+        <a href="sub el">Audi rulate-Audi Approved :plus</a>
+        <a href="sub el">Audi rulate-Das WeltAuto</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Service si acccesorii</h4>
+        <a href="sub el">Cautare distribuitor</a>
+        <a href="sub el">Accesorii originale Audi</a>
+        <a href="sub el">Servicii Audi</a>
+        <a href="sub el">myAudi</a>
+        <a href="sub el">Audi connect</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Suport</h4>
+        <a href="sub el">Contact</a>
+        <a href="sub el">Newsletter</a>
+        <a href="sub el">Cautare Distribuitor</a>
+      </div>
+
+    </div>
+
+    <div class="legal">
+      © 2025 Audi România. Toate drepturile rezervate.
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
