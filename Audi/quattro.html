@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ro">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Audi – Quattro</title>
+      <link rel="stylesheet" href="style.css">
+      <style>
+         *{
+         margin:0;
+         padding:0;
+         box-sizing:border-box;
+         font-family:Arial, sans-serif;
+         }
+         body{
+         background:#000;
+         color:white;
+         }
+         .header {
+         background:#000;
+         height:64px;
+         display:flex;
+         justify-content:center;
+         align-items:center;
+         position:sticky;
+         top:0;
+         z-index:1000;
+         }
+         .header-inner{
+         width:100%;
+         max-width:var(--container);
+         padding:0 20px;
+         display:flex;
+         align-items:center;
+         justify-content:space-between;
+         }
+         .menu-left{
+         display:flex;
+         align-items:center;
+         gap:10px;
+         color:#ffffff;
+         }
+         .menu-left span{font-size:15px;color:#c9c9c9}
+         .menu-icon{
+         width:20px;height:14px;position:relative;
+         }
+         .menu-icon span{
+         position:absolute;left:0;right:0;height:2px;background:#fff;
+         }
+         .menu-icon span:nth-child(1){top:0}
+         .menu-icon span:nth-child(2){top:6px}
+         .menu-icon span:nth-child(3){top:12px}
+         .logo-audi img{
+         height:22px;
+         }
+         .menu-btn{
+         color:white;
+         font-size:18px;
+         cursor:pointer;
+         }
+         .logo{
+         font-size:38px;
+         letter-spacing:5px;
+         }
+         .audi{
+         width:100%;
+         height:500px;
+         overflow:hidden;
+         }
+         .audi-img{
+         width:100%;
+         height:100%;
+         object-fit:cover;
+         }
+         .subpoza1{
+         background:#242f2e;
+         padding:20px 40px;
+         font-size:16px;
+         color:#aaa;
+         }
+         .subpoza1 span{
+         color:white;
+         font-weight:bold;
+         }
+         .subsub{
+         background:#0f1113;
+         padding:20px 40px;
+         display:flex;
+         flex-wrap:wrap;
+         gap:25px;
+         }
+         .subsub a{
+         color:#c7c7c7;
+         text-decoration:none;
+         font-size:16px;
+         }
+         .subsub a:hover,
+         .subsub .active{
+         color:white;
+         border-bottom:1px solid white;
+         padding-bottom:3px;
+         }
+         .introducere-text {
+         background: #0f1114;
+         text-align: center;
+         padding: 90px 20px;
+         color: #d5d5d5;
+         }
+         .introducere-text h1 {
+         font-size: 48px;
+         font-weight: 300;
+         margin-bottom: 40px;
+         color: #ffffff;
+         }
+         .introducere-text p {
+         font-size: 20px;
+         line-height: 1.7;
+         max-width: 1200px;
+         margin: 0 auto;
+         color: #c4c4c4;
+         }
+         .quattro-image {
+         background: #0f1114;
+         padding: 0;
+         margin: 0;
+         }
+         .quattro-image img {
+         width: 100%;
+         height: auto;
+         display: block;
+         }
+         .quattro-tech {
+         display: flex;
+         justify-content: space-between;
+         align-items: flex-start;
+         gap: 60px;
+         background: #0f1114;
+         padding: 80px 10%;
+         color: white;
+         }
+         .qt-text {
+         width: 50%;
+         font-size: 17px;
+         line-height: 1.6;
+         }
+         .qt-text h2 {
+         font-size: 26px;
+         margin-bottom: 15px;
+         font-weight: 700;
+         }
+         .poza-3 {
+         width: 50%;
+         background: white;
+         border-radius: 25px;
+         padding: 40px;
+         }
+         .poza-3 img {
+         width: 100%;
+         height: auto;
+         display: block;
+         }
+         .logo-audi img{
+         height:22px;
+         }
+         .quattro-tech2 {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         gap: 60px;
+         background: #0f1114;
+         padding: 80px 10%;
+         color: white;
+         }
+         .poza4-image {
+         width: 50%;
+         background: white;
+         padding: 40px;
+         border-radius: 25px;
+         }
+         .poza4-image img {
+         width: 100%;
+         height: auto;
+         display: block;
+         }
+         .poza4-text {
+         width: 50%;
+         }
+         .poza4-text h2 {
+         font-size: 26px;
+         margin-bottom: 15px;
+         font-weight: 700;
+         }
+         .poza4-text p {
+         font-size: 17px;
+         line-height: 1.6;
+         margin-bottom: 20px;
+         }
+         .istorie {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         gap: 60px;
+         background: #0f1114;
+         padding: 80px 10%;
+         color: white;
+         }
+         .qh-text {
+         width: 55%;
+         }
+         .qh-text p {
+         font-size: 18px;
+         line-height: 1.65;
+         margin-bottom: 28px;
+         }
+         .poza-5 {
+         width: 45%;
+         background: white;
+         padding: 0;
+         border-radius: 25px;
+         overflow: hidden;
+         }
+         .poza-5 img {
+         width: 100%;
+         height: auto;
+         display: block;
+         border-radius: 25px;
+         }
+         body {
+         margin: 0;
+         background: #111; 
+         font-family: Arial, sans-serif;
+         }
+         .slider-container {
+         position: relative;
+         width: 100%;
+         height: 100vh;
+         }
+         .image-frame {
+         width: 100%;
+         height: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         }
+         .image-frame img {
+         height: 100%;
+         object-fit: cover;
+         }
+         .slider-dots {
+         position: absolute;
+         bottom: 20px;
+         width: 100%;
+         text-align: center;
+         color: white;
+         font-size: 18px;
+         letter-spacing: 10px;
+         }
+         .carusel{
+         width: 600px;
+         height: 350px;
+         position: relative;
+         overflow: hidden;
+         margin: 20px auto;
+         border-radius: 10px;
+         }
+         .slides {
+         width: 500%;
+         height: 100%;
+         display: flex;
+         }
+         .slides input {
+         display: none;
+         }
+         .slide {
+         width: 20%;
+         transition: 0.6s;
+         }
+         .slide img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         }
+         #img1:checked ~ .first {
+         margin-left: 0;
+         }
+         #img2:checked ~ .first {
+         margin-left: -20%;
+         }
+         #img3:checked ~ .first {
+         margin-left: -40%;
+         }
+         #img4:checked ~ .first {
+         margin-left: -60%;
+         }
+         #img5:checked ~ .first {
+         margin-left: -80%;
+         }
+         .navigatie {
+         position: absolute;
+         width: 100%;
+         bottom: 15px;
+         display: flex;
+         justify-content: center;
+         gap: 10px;
+         }
+         .nav-btn {
+         width: 12px;
+         height: 12px;
+         border: 2px solid white;
+         border-radius: 50%;
+         cursor: pointer;
+         transition: 0.3s;
+         }
+         .nav-btn:hover {
+         background: white;
+         }
+      </style>
+   </head>
+   <body>
+      <header class="header">
+         <div class="header-inner">
+            <div class="menu-left">
+               <div class="menu-icon">
+                  <span></span><span></span><span></span>
+               </div>
+               <span>Meniu</span>
+            </div>
+            <div class="logo-audi">
+               <img src="../Qattro/audi emblema 2.jpeg" alt="Audi Logo">
+            </div>
+            <div style="width:60px"></div>
+         </div>
+      </header>
+      <section class="audi">
+         <img src="../Qattro/qattro poza 1.webp" alt="Quattro" class="audi-img">
+      </section>
+      <div class="subpoza1">
+         Modele  >  <span>Quattro</span>
+      </div>
+      <nav class="subsub">
+         <a href="sub">Toate modelele</a>
+         <a href="sub">SUV-uri</a>
+         <a href="sub">Automobile noi cu livrare rapidă</a>
+         <a href="sub">Hibride Plug-In</a>
+         <a href="sub">Mobilitatea electrică</a>
+         <a href="sub">Avant</a>
+         <a href="sub">Modelele Audi Q</a>
+         <a href="sub">Modele Sport Audi</a>
+         <a href="sub" class="active">Quattro</a>
+         <a href="sub">Variante de caroserie</a>
+      </nav>
+      <section class="introducere-text">
+         <h1>Cine cunoaște Audi, cunoaște și quattro.</h1>
+         <p>
+            Și cine a condus măcar o dată un Audi cu tracțiune quattro, nu va mai dori să conducă vreodată altceva. 
+            De ce? Pentru că acest sistem transmite puterea motorului pe șosea într-un mod impresionant. 
+            Tehnologia de vârf quattro îți oferă dinamism și siguranță, dar și o experiență de condus exclusivă și inconfundabilă. 
+            Un Audi cu tracțiune quattro merge mai departe chiar și acolo unde alte mașini cu tracțiune pe două roți nu mai au aderență – 
+            de exemplu, pe drumuri alunecoase sau neasfaltate.
+         </p>
+      </section>
+      <section class="quattro-image">
+         <img src="../Qattro/audi quattro poza.2.webp" alt="Audi Quattro in mountains">
+      </section>
+      <section class="quattro-tech">
+         <div class="qt-text">
+            <h2>Tracțiunea quattro</h2>
+            <p>
+               Audi îți oferă tracțiunea quattro în versiuni adaptate fiecărui model. 
+               La modelele compacte cu motor montat transversal, sistemul folosește 
+               un ambreiaj multidisc acționat hidraulic și controlat electronic, montat pe puntea spate.
+               La modelul sport cu motor central, Audi R8, ambreiajul se află pe puntea față. 
+               Aceste sisteme active distribuie puterea între cele două punți în funcție de situația de condus.
+               Pentru multe modele Audi cu motor montat longitudinal în față, se folosește un diferențial central 
+               autoblocant – un mecanism pur mecanic, de tip planetar. În condiții normale, acesta transmite cuplul 
+               motor în proporție de 40:60 între puntea față și cea spate. Pentru unele motorizări de top, poți opta 
+               pentru diferențialul sport pe puntea spate. Acesta distribuie activ cuplul între roțile din spate, 
+               folosind două trepte de suprapunere și ambreiaje multidisc acționate electrohidraulic. 
+               În situații extreme, aproape tot cuplul poate fi direcționat către o singură roată – sistemul 
+               „împinge” mașina în viraj, reducând subvirarea încă din faza incipientă.
+            </p>
+         </div>
+         <div class="poza-3">
+            <img src="../Qattro/qatrro.poza.3.webp" alt="quattro system">
+         </div>
+      </section>
+      <video style="width: 100%; height: auto;" controls>
+         <source src="../Qattro/audi clip.mp4" type="video/mp4">
+      </video>
+      <section class="quattro-tech2">
+         <div class="poza4-image">
+            <img src="../Qattro/qattro.poza 4.webp" alt="tehnologia quattro">
+         </div>
+         <div class="poza4-text">
+            <h2>Tehnologia quattro</h2>
+            <p>
+               De peste 40 de ani, Audi dezvoltă constant tehnologia quattro.
+               Cu peste opt milioane de modele produse cu acest sistem,
+               Audi este cel mai de succes producător premium de automobile
+               cu tracțiune integrală permanentă din lume. Și poate, în curând,
+               chiar și pe Lună – cu Audi lunar quattro.
+            </p>
+            <p>
+               Prin quattro, Audi a scris istorie în lumea auto:
+               în 1980, niciun alt producător nu oferea un sistem de tracțiune
+               integrală ușor, rapid și pregătit pentru producția de serie.
+            </p>
+         </div>
+      </section>
+      <section class="istorie">
+         <div class="qh-text">
+            <p>
+               Tehnologia a debutat în 1980 la Salonul Auto de la Geneva în așa-numitul Ur-quattro.
+               În 1986, Audi a înlocuit diferențialul central blocabil manual din prima generație
+               cu diferențialul Torsen, care putea distribui cuplurile de acționare în mod variabil,
+               urmat în 2005 de transmisia cu angrenaj planetar cu distribuție de bază asimetrică-dinamică
+               a forțelor. Până în prezent, diferențialele centrale autoblocante sunt dezvoltate continuu la Audi
+               și sunt considerate punctul de referință pentru tracțiune și dinamică de conducere,
+               cu o greutate foarte redusă în același timp.
+            </p>
+            <p>
+               Tracțiunea integrală quattro este o piatră de temelie pentru Audi.
+               Acum, marca îl consolidează și mai mult – cu noi modele și noi tehnologii.
+               Grupul motopropulsor quattro electrificat reprezintă un concept complet nou pentru mobilitatea viitorului.
+            </p>
+         </div>
+         <div class="poza-5">
+            <img src="../Qattro/Qattro. poza. 5.webp" alt="Audi Rally Sport">
+         </div>
+      </section>
+      <div class="carusel">
+         <div class="slides">
+            <input type="radio" name="schimb-btn" id="img1" checked>
+            <input type="radio" name="schimb-btn" id="img2">
+            <input type="radio" name="schimb-btn" id="img3">
+            <input type="radio" name="schimb-btn" id="img4">
+            <input type="radio" name="schimb-btn" id="img5">
+            <div class="slide first">
+               <img src="../Qattro/slide poza 1.jfif">
+            </div>
+            <div class="slide">
+               <img src="../Qattro/slide poza 2.jfif">
+            </div>
+            <div class="slide">
+               <img src="../Qattro/slide poza 3.jfif">
+            </div>
+            <div class="slide">
+               <img src="../Qattro/slide poza 4.jfif">
+            </div>
+            <div class="slide">
+               <img src="../Qattro/slide poza 5.jfif">
+            </div>
+         </div>
+         <div class="navigatie">
+            <label for="img1" class="nav-btn"></label>
+            <label for="img2" class="nav-btn"></label>
+            <label for="img3" class="nav-btn"></label>
+            <label for="img4" class="nav-btn"></label>
+            <label for="img5" class="nav-btn"></label>
+         </div>
+      </div>
+      <style>
+         h1 {
+         font-size: 20px;
+         color: #ffffff;
+         margin-bottom: 18px;
+         font-weight: 600;
+         }
+         p {
+         font-size: 16px;
+         color: #cfcfcf;
+         margin-bottom: 18px;
+         text-align: left;
+         }
+      </style>
+      <div>
+         <h1>Tracțiunea integrală quattro</h1>
+         <p>Tracțiunea integrală quattro este unul dintre pilonii de bază pe care se sprijină Audi. În prezent, marca duce această tehnologie și mai departe – prin modele noi și tehnologii inovatoare.</p>
+         <p>Tracțiunea quattro integrată în sistemele de propulsie electrificate reprezintă un concept complet nou, gândit pentru mobilitatea viitorului.</p>
+         <p>Cu tehnologia quattro, Audi a sărbătorit numeroase triumfuri și în motorsport. Recordul de până acum: patru titluri în Campionatul Mondial de Raliuri, șase victorii în faimoasa urcare de pe Pikes Peak (SUA), o victorie în seria TransAm din SUA, două titluri DTM, unsprezece campionate naționale de Super Touring Car și o Cupă Mondială de Turisme.</p>
+         <p>Cea mai recentă victorie pentru tehnologia quattro: Mattias Ekström și echipa sa privată de rallycross EKS au câștigat titlurile de „Campion Mondial al Piloților” și „Campion Mondial pe echipe” în Campionatul Mondial FIA de Rallycross cu Audi S1 EKS RX quattro la sfârșitul lunii noiembrie.</p>
+      </div>
+   </body>
+</html>
