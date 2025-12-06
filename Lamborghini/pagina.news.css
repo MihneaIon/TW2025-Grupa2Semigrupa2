@@ -70,7 +70,7 @@ padding: 40px 90px 70px 0;
     margin-bottom: 15px;
    
 }
-h1 {
+.title-section h1 {
      font-size: 90px;
      font-family: Arial, sans-serif;
     font-weight: 900;
@@ -87,13 +87,10 @@ h1 {
 }
 
 .articol img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-left: 50px;
-    margin-right: 80px;
-       margin: 0 auto;
-       max-width: 1300px;
+       display: block; 
+    max-width: 1300px; 
+    width: 100%; 
+    margin: 0 auto;
 }
 
 .tag {
@@ -121,7 +118,7 @@ h1 {
     font-weight: bold;
 }
 
-h2 {
+.articol h2 {
     font-size: 32px;
     font-weight: bold;
     margin-top: 10px;
@@ -178,7 +175,7 @@ h2 {
     margin-bottom: 8px;
 }
 
-h3 {
+.card h3 {
     font-size: 24px;
     font-weight: bold;
     margin-top: 10px;
