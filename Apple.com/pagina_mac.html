@@ -11,6 +11,7 @@
     #list1 li{
         display: inline;
         padding-right: 50px;
+        cursor: pointer;
     }
     div{
         display: block;
@@ -30,6 +31,7 @@
         display: flex;
         flex-direction: column;
         padding: 20px;
+        cursor: pointer;
     }
     .hidden{
         display: none;
@@ -314,10 +316,10 @@ input[type="radio"]:checked + .button1 {
     /*buton1*/
 
     #check:checked + label .arrow {
-        transform: rotate(90deg);
+        transform: rotate(-90deg);
     }
     label .arrow {
-        transform: rotate(-90deg);
+        transform: rotate(90deg);
     }
 
     .arrow {
@@ -356,10 +358,10 @@ input[type="radio"]:checked + .button1 {
     /*buton2*/
 
     #check2:checked + label .arrow {
-        transform: rotate(90deg);
+        transform: rotate(-90deg);
     }
     label .arrow {
-        transform: rotate(-90deg);
+        transform: rotate(90deg);
     }
 
     #check2:checked ~ #text2 {
@@ -392,10 +394,10 @@ input[type="radio"]:checked + .button1 {
     /*buton3*/
 
     #check3:checked + label .arrow {
-        transform: rotate(90deg);
+        transform: rotate(-90deg);
     }
     label .arrow {
-        transform: rotate(-90deg);
+        transform: rotate(90deg);
     }
 
     #check3:checked ~ #text2 {
@@ -429,19 +431,85 @@ input[type="radio"]:checked + .button1 {
         display: flex;
         justify-content: center;
     }
-
-    #div5 figure{
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
+    
     #div-figure{
+        border-radius: 28px; 
+        background-color: #F5F6F7; 
+        flex-direction: column; 
+        width: 1200px;
+        height: 600px; 
         display: flex;
-        width: ;
-        height: ;
         align-items: flex-start;
         justify-content: flex-start;
     }
+
+    #div-figure figure {
+        display: block; 
+        margin-left: 100px; 
+    }
+
+    /* imagini pt butoane */
+
+    #img1-list, #img2-list, #img3-list {
+        display: none;
+    }       
+
+    #check:checked ~ #img1-list{
+        display: block;
+        width: 683px;
+        height: 399px;
+    }
+
+    #check2:checked ~ #img2-list{
+        display: block;
+        width: 683px;
+        height: 399px;
+    }
+
+    #check3:checked ~ #img3-list{
+        display: block;
+        width: 683px;
+        height: 399px;
+    }
+    
+    #div-figure{
+        position: relative;
+    }
+
+    .check-btn img {
+        position: absolute;
+        top: 150px;      
+        left: 510px;     
+        width: 500px;
+        height: auto;
+        display: none;
+        border-radius: 20px;
+    }
+
+
+    #div6 {
+        background-color: #f5f5f7;
+        margin-top: 100px;
+    }
+
+    .list-coloane {
+        display: flex;
+        gap: 100px;
+        list-style: none;
+        padding: 0;
+        margin-left: 40px;
+    }
+
+    .list-coloane > li {
+        flex: 1;
+    }
+
+    .list-coloane ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }   
+    
     </style>
 </head>
 <body>
@@ -785,7 +853,7 @@ input[type="radio"]:checked + .button1 {
 
 <h1 style="font-size: 60px; margin-left: 90px; margin-bottom: 30px;">Descopera lumea Apple.</h1>
 <div id="div5">
-    <div id="div-figure" style="border-radius: 28px; background-color: #F5F6F7; display: flex; flex-direction: column; width: 1200px; height: 800px;">
+    <div id="div-figure">
         
         <figure class="check-btn" style="margin-top: 150px;">
             <input type="radio" name="radio" id="check" checked hidden>
@@ -796,6 +864,7 @@ input[type="radio"]:checked + .button1 {
             <p id="text">
             Răspunde la apelurile și mesajele primite pe iPhone direct de pe Mac. Folosește Clipboard universal pentru a copia imagini, video sau text de pe iPhone, apoi lipește-le în altă aplicație, pe Mac-ul tău din apropiere. Iar cu iCloud, poți accesa fișierele tale atât de pe iPhone, cât și de pe Mac. Și multe altele.
             </p>
+            <img  id="img1-list" src="imagine1.jpg" alt="imagine1">
         </figure>
 
         <figure class="check-btn">
@@ -807,6 +876,7 @@ input[type="radio"]:checked + .button1 {
             <p id="text2">
             Schițează pe iPad și vezi totul, imediat, pe Mac. Sau folosește-ți iPad-ul ca pe un al doilea ecran. Astfel, poți lucra pe un ecran, folosindu-l pe celălalt ca referință. Poți începe un proiect Final Cut Pro pe iPad, ca să-l continui apoi pe Mac. 
             </p>
+            <img  id="img2-list" src="imagine2.jpg" alt="imagine2">
         </figure>
 
         <figure class="check-btn">
@@ -818,7 +888,104 @@ input[type="radio"]:checked + .button1 {
             <p id="text3">
             Te loghezi automat pe Mac atunci când porți Apple Watch cu Auto deblocare. Nu e nevoie să introduci nicio parolă.
             </p>
-        </figure>
+            <img  id="img3-list" src="imagine3.jpg" alt="imagine3">
+        </figure> 
+    </div>
+</div>
+
+<div id="div6" >
+<h1 style="font-size: 60px; margin-left: 90px; margin-bottom: 30px;">Mac</h1>
+<ul class="list-coloane">
+    <li>
+        <p style="margin-left: 50px;">Explorează modele Mac</p>
+        <ul style="list-style: none; cursor: pointer; margin-left: 50px;">
+            <li><h2>Explorează toate modelele Mac</h2></li>
+            <li><h2>MacBook Air</h2></li>
+            <li><h2>MacBook Pro</h2></li>
+            <li><h2>iMac</h2></li>
+            <li><h2>Mac mini</h2></li>
+            <li><h2>Mac Studio</h2></li>
+            <li><h2>Mac Pro</h2></li>
+            <li><h2>Monitoare</h2></li>
+            <li><h5>Compară modele Mac</h5></li>
+        </ul>
+    </li>
+    <li>
+        Mai multe de la Mac <br>
+        <h5 style="cursor: pointer;">Asistenta Mac</h5>
+    </li>
+
+</ul>
+</div>
+
+
+<div id="div8" style="background-color: #ebecf0;">
+    <div style="margin-left: 300px; margin-right: 300px; font-size: 13px; color: gray; border-bottom: gray 1px solid;">
+       <p>1. Software-urile și conținutul digital pot fi comercializate separat. Disponibilitatea titlurilor se poate modifica.</p>
+       <p>2. Teste efectuate de Apple în perioada august-octombrie 2024, folosind sisteme de preproducție MacBook Pro de 16 inchi cu cip Apple M4 Pro, CPU cu 14 nuclee, GPU cu 20 de nuclee, 48 GB de RAM și SSD de 512 GB. Autonomia bateriei pentru navigare wireless pe internet a fost testată navigând pe 25 de site-uri web populare în timp ce dispozitivul era conectat la Wi-Fi. Autonomia bateriei pentru redare video în streaming a fost testată redând conținut la 1080p în Safari în timp ce dispozitivul era conectat la Wi-Fi. Toate sistemele au fost testate cu luminozitatea ecranului setată la 8 clicuri de jos și cu iluminarea de fundal a tastaturii dezactivată. Autonomia bateriei variază în funcție de utilizare și de configurare. Consultă apple.com/ro/batteries pentru informații suplimentare.</p>
+       <p>3. Este necesar ca iPhone-ul tău, cu abonament activ de servicii mobile, și Mac-ul să fie conectate cu același cont Apple, să fie unul lângă celălalt, autentificate în FaceTime cu același cont Apple, să aibă Wi-Fi activat și să fie conectate la aceeași rețea. Este nevoie de microfon extern sau căști pentru Mac Studio, Mac mini și Mac Pro.</p>
+       <p>4. Handoff necesită un iPhone sau iPad cu iOS 8 sau o versiune ulterioară ori iPadOS.</p>
+       <p>5. Apple Intelligence este disponibilă în versiune beta. Este posibil ca unele funcții să nu fie disponibile în toate regiunile sau în toate limbile.<br>Pentru disponibilitatea funcțiilor sau a limbilor, precum și pentru cerințele de sistem, consultă support.apple.com/ro-ro/121115.</p>
+       <p>Caracteristicile se pot modifica. Este posibil ca unele caracteristici, aplicații și servicii să nu fie disponibile în toate regiunile sau în toate limbile.
+Unele funcții necesită un cont Apple, hardware compatibil și acces la internet sau o rețea celulară compatibilă. Este posibil să se aplice taxe și condiții suplimentare.<br>
+Anumite funcții necesită hardware și software speciale. Pentru mai multe informații, consultă support.apple.com/ro-ro/108046.<br>
+Imagine Stellarium a galaxiei M31 de Lee, Ang (HG731GZ). Licență de atribuire Creative Commons 3.0.</p>
+    </div>
+
+    <div style="margin-top: 10px; font-size: 13px;">
+        <p style="margin-left: 300px;"> > Mac</p>
+
+        <ul style="list-style: none; margin-left: 260px; display: flex; flex-direction: row; gap: 200px;">
+            <li>
+                Explorează
+                <ul style="list-style: none; cursor: pointer; color: gray; margin: 0; padding-left: 0; gap: 10px; display: flex; flex-direction: column; margin-top: 10px;">
+                    <li>Mac</li>
+                    <li>iPad</li>
+                    <li>iPhone</li>
+                    <li>Watch</li>
+                    <li>Music</li>
+                    <li>AirPods</li>
+                    <li>AirTag</li>
+                </ul>
+            </li>
+
+            <li>
+                Cont 
+                <ul style="list-style: none; cursor: pointer; color: gray; margin: 0; padding-left: 0; gap: 10px; display: flex; flex-direction: column; margin-top: 10px; margin-bottom: 25px;">
+                    <li>Administrează-ți contul Apple</li>
+                    <li>iCloud.com</li>
+                </ul>
+                Divertisment
+                <ul style="list-style: none; cursor: pointer; color: gray; margin: 0; padding-left: 0; gap: 10px; display: flex; flex-direction: column; margin-top: 10px;">
+                    <li>Apple Music</li>
+                    <li>Apple Arcade</li>
+                </ul>
+            </li>
+
+            <li>
+                Valori Apple 
+                <ul style="list-style: none; cursor: pointer; color: gray; margin: 0; padding-left: 0; gap: 10px; display: flex; flex-direction: column; margin-top: 10px; margin-bottom: 25px;">
+                    <li>Confidențialitate</li>
+                </ul>
+                Despre Apple
+                <ul style="list-style: none; cursor: pointer; color: gray; margin: 0; padding-left: 0; gap: 10px; display: flex; flex-direction: column; margin-top: 10px;">
+                    <li>Newsroom</li>
+                    <li>AApple Leadership</li>
+                    <li>Investitori</li>
+                    <li>Etică și Conformitate</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p style="margin-left: 300px; color: gray; border-bottom: gray 1px solid; width: 900px;"><a href="#" style=" text-decoration: underline; color: #007AFF;">Găsește un distribuitor</a>  în apropiere.</p>
+    
+        <div style="display: flex; flex-direction: row; font-size: 13px; color: gray; margin-left: 300px; gap: 50px;">
+            <p>Copyright © 2025 Apple Inc. Toate drepturile rezervate.</p>
+            <p style="cursor: pointer;">Cum folosim cookie-urile</p>
+            <p style="cursor: pointer;">Termeni de utilizare</p>
+            <p style="cursor: pointer;">Hartă site</p>
+            <p>Romania</p>
+        </div>
     </div>
 </div>
 </body>
