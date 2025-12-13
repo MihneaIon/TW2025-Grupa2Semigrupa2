@@ -16,6 +16,7 @@ header{
   position: sticky;
   align-items: center;
 top:0;
+z-index:1000;
 }
 .menu-buton {
     margin-left: 120px;

@@ -150,6 +150,8 @@ header {
   object-fit: cover;  
   border-radius: 8px;
   display: block;
+  overflow:hidden;
+
 }
 .text1 h2 ,.text2 h2 ,.text3 h2, .text4 h2 {
   font-size: 40px;
