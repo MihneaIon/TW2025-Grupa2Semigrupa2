@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #101319; /* culoarea cerută */
+    color: white;
+}
+
+/* Bara de sus */
+.navbar {
+    background-color: #000000;
+    padding: 15px;
+}
+
+.menu {
+    display: inline-block;
+}
+
+.logo {
+    float: right;
+    font-weight: bold;
+}
+
+/* Sectiune titlu */
+.hero {
+    background-color: #101319;
+    padding: 20px 20px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #cccccc;
+}
+
+/* Sectiune imagine */
+.car-section {
+    background-color: #181c24; 
+    padding: 40px;
+    text-align: center;
+}
+
+.car-section img {
+    width: 100%;
+    max-width: none;
+}
+
+/* Sectiune informatii */
+.info {
+    background-color: #101319;
+    padding: 40px;
+}
+
+.info h2 {
+    margin-top: 0;
+}
+.phev-section {
+    background-color: #101319;
+    color: white;
+    padding: 30px 60px 60px;
+    font-family: Arial, sans-serif;
+}
+
+/* breadcrumb */
+.breadcrumb {
+    color: #cccccc;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.breadcrumb .active {
+    color: white;
+}
+
+/* meniu categorii */
+.categories {
+    margin-bottom: 20px;
+}
+
+.categories a {
+    color: #cccccc;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+.categories a:hover {
+    text-decoration: underline;
+}
+
+.categories .active {
+    color: white;
+    text-decoration: underline;
+}
+
+/* linie */
+.phev-section hr {
+    border: none;
+    border-top: 1px solid #2a2f3a;
+    margin: 30px 0;
+}
+
+/* continut text */
+.phev-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.phev-content h1 {
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+.phev-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #dddddd;
+    margin-bottom: 20px;
+}
+.a3-section {
+    background-color: #101319;
+    color: white;
+    padding: 80px 60px;
+    font-family: Arial, sans-serif;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+/* layout simplu */
+.a3-content {
+    width: 100%;
+}
+
+/* imagine */
+.a3-image {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.a3-image img {
+    width: 70%;
+    border-radius: 15px;
+}
+
+/* text */
+.a3-text {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 4%;
+}
+
+.a3-text h3 {
+    font-size: 26px;
+    margin-top: 0;
+}
+
+.a3-text p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+.a3-text ul {
+    margin: 25px 0;
+    padding-left: 20px;
+}
+
+.a3-text li {
+    margin-bottom: 10px;
+    color: #cccccc;
+}
+
+/* buton */
+.more-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #555;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.more-btn:hover {
+    background-color: #1c2230;
+}
+
