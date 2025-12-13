@@ -32,11 +32,8 @@
 
     .hero {
         width: 100%;
-        height: 520px;
-        background-image: url('c:\Users\Wind 10\Desktop\audi proiect\start.webp');
-        background-size: cover;
-        background-position: center;
-        position: relative;
+        height: auto;
+        background: none;
     }
     .breadcrumb {
         background: #1a1a1a;
@@ -60,6 +57,20 @@
     nav a:hover {
         opacity: 0.7;
     }
+    .btn {
+    margin-top: 10px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1px solid #444;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: #fff;
+    color: #000;
+}
 .suv-section {
     background: #111;
     color: #e6e6e6;
@@ -176,32 +187,124 @@
     width: 100%;
     max-width: 520px;
     border-radius: 22px;
-}  
+} 
+    footer{
+        padding:60px 80px 40px;
+        background:#000;
+        position:relative;
+    }
+    .back-to-top{
+        position:absolute;
+        right:40px;
+        top:20px;
+        color:#ccc;
+        cursor:pointer;
+        font-size:14px;
+        display:flex;
+        align-items:center;
+        gap:6px;
+        text-decoration:none;
+    }
+
+    .back-to-top:hover{
+        color:#fff;
+    }
+    .arrow-up{
+        border: solid #ccc;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 5px;
+        transform: rotate(-135deg);
+        margin-top:2px;
+    }
+
+    .back-to-top:hover .arrow-up{
+        border-color:#fff;
+    }
+
+    .footer-columns{
+        display:flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        margin-bottom:50px;
+    }
+
+    .footer-column{
+        min-width:200px;
+        margin-bottom:30px;
+    }
+
+    .footer-column h3{
+        color:#fff;
+        font-size:18px;
+        margin-bottom:20px;
+        font-weight:600;
+    }
+
+    .footer-column a{
+        display:block;
+        color:#bbb;
+        text-decoration:none;
+        margin:6px 0;
+        font-size:14px;
+    }
+
+    .footer-column a:hover{
+        color:#fff;
+    }
+
+    hr{
+        border:0;
+        border-top:1px solid #444;
+        margin:20px 0 30px;
+    }
+
+    .footer-bottom{
+        font-size:13px;
+        color:#888;
+        margin-bottom:15px;
+    }
+
+    .footer-link{
+        display:flex;
+        flex-wrap:wrap;
+        gap:20px;
+        margin-bottom:25px;
+    }
+
+    .footer-link a{
+        color:#bbb;
+        text-decoration:none;
+        font-size:13px;
+    }
+
+    .footer-link a:hover{
+        color:#fff;
+    }
 </style>
 </head>
 <body>
 
 <header>
     <div class="menu-icon">☰ Meniu</div>
-    <img class="audi-logo" src="c:\Users\Wind 10\Desktop\audi proiect\logo-Audi.png">
+    <img class="audi-logo" src="./audi proiect/logo-Audi.png" alt="Logo">
 </header>
 <div class="hero">
-    <img class="hero" src="c:\Users\Wind 10\Desktop\audi proiect\start.webp">
+    <img class="hero" src="./audi proiect/start.webp" alt="Audi SUV">
 </div>
 <div class="breadcrumb">
     Modele > Variante de caroserie > <span>SUV</span>
 </div>
 <nav>
     <a href="https://www.audi.ro/modele/variante-caroserie/prezentare-generala">Prezentare generală</a>
-    <a href="c:\Users\Wind 10\Desktop\SUV.html">SUV</a>
-    <a href="c:\Users\Wind 10\Desktop\Avant.html">Avant</a>
+    <a href="SUV.html">SUV</a>
+    <a href="Avant.html">Avant</a>
     <a href="https://www.audi.ro/modele/variante-caroserie/sportback">Sportback</a>
     <a href="https://www.audi.ro/modele/variante-caroserie/limuzina">Limuzină</a>
     <a href="https://www.audi.ro/modele/variante-caroserie/propulsii-alternative">Propulsii alternative</a>
 </nav>
  <section class="suv-section">
     <h1>Modelele Audi SUV</h1>
-
     <p class="intro">
         Modelele SUV de la Audi se numără printre cele mai populare tipuri de vehicule din gamă. Ele impresionează nu doar prin versatilitatea lor în viața de zi cu zi, ci mai ales prin eficiență și sistemele de asistență disponibile opțional. Aceste modele nu încearcă să convingă prin vorbe, ci prin experiență: sunt puternice, fără a compromite plăcerea de a conduce; sunt sportive, fără a fi lipsite de rațiune. În ele se îmbină tehnologii inteligente cu valori tradiționale precum confortul și puterea.
     </p>
@@ -243,7 +346,7 @@
 </section>
 <section class="model-section">
     <div class="model-text">
-        <h1>Audi Q2</h1>
+        <h2>Audi Q2</h2>
         <p class="subtitle">Puternic și impunător.</p>
         <ul>
             <li>Design îndrăzneț cu impact puternic</li>
@@ -253,15 +356,15 @@
         <a href="https://www.audi.ro/q2/q2/fascinatie" class="more-btn">Află mai multe</a>
     </div>
     <div class="model-image">
-        <img src="c:\Users\Wind 10\Desktop\audi proiect\audi q2.webp" alt="Audi Q2"> 
+        <img src="./audi proiect/audi q2.webp" alt="Audi Q2"> 
     </div>
 </section>
 <section class="model-section">
     <div class="model-image">
-        <img src="c:\Users\Wind 10\Desktop\audi proiect\audi sq2.webp" alt="Audi SQ2">
+        <img src="./audi proiect/audi sq2.webp" alt="Audi SQ2">
     </div>
     <div class="model-text">
-        <h1>Audi SQ2</h1>
+        <h2>Audi SQ2</h2>
         <p class="subtitle">Puternic și încrezător.</p>
         <ul>
             <li>Aspect SUV accentuat de capota tridimensională</li>
@@ -273,7 +376,7 @@
 </section>
 <section class="model-section">
     <div class="model-text">
-        <h1>Audi Q3</h1>
+        <h2>Audi Q3</h2>
         <p class="subtitle">Conceput pentru viață.</p>
         <ul>
             <li>Un SUV de familie cu abilități complete.</li>
@@ -283,15 +386,15 @@
         <a href="https://www.audi.ro/q3/q3-suv/fascinatie" class="more-btn">Află mai multe</a>
     </div>
     <div class="model-image">
-        <img src="c:\Users\Wind 10\Desktop\audi proiect\audi q3.webp" alt="Audi Q3"> 
+        <img src=".\audi proiect\audi q3.webp" alt="Audi Q3"> 
     </div>
 </section>
 <section class="model-section">
     <div class="model-image">
-        <img src="c:\Users\Wind 10\Desktop\audi proiect\audi q3 suv e-hybrid.webp" alt="Audi Q3 SUV e-hybrid">
+        <img src=".\audi proiect\audi q3 suv e-hybrid.webp" alt="Audi Q3 SUV e-hybrid">
     </div>
     <div class="model-text">
-        <h1>Audi Q3 SUV e-hybrid</h1>
+        <h2>Audi Q3 SUV e-hybrid</h2>
         <p class="subtitle">Electrizant polivalent.</p>
         <ul>
             <li>Mult spațiu, rafinamente tehnice și un șasiu avansat pentru o dinamică sporită.</li>
@@ -302,10 +405,10 @@
 </section>
 <section class="model-section">
     <div class="model-image">
-        <img src="c:\Users\Wind 10\Desktop\audi proiect\Audi Q4 e-tron.webp" alt="Audi Q4 e-tron">
+        <img src=".\audi proiect\Audi Q4 e-tron.webp" alt="Audi Q4 e-tron">
     </div>
     <div class="model-text">
-        <h1>Audi Q4 e-tron</h1>
+        <h2>Audi Q4 e-tron</h2>
         <p class="subtitle">Model pentru viitor.</p>
         <ul>
             <li>Designul clar conferă viitorului electromobilității o formă caracteristică</li>
@@ -317,7 +420,7 @@
 </section>
 <section class="model-section">
     <div class="model-text">
-        <h1>Audi Q4 Sportback e-tron</h1>
+        <h2>Audi Q4 Sportback e-tron</h2>
         <p class="subtitle">Inspirația devine viitorul.</p>
         <ul>
             <li>Design sportiv</li>
@@ -327,15 +430,15 @@
         <a href="https://www.audi.ro/q4/q4-sportback-e-tron/fascinatie" class="more-btn">Află mai multe</a>
     </div>
     <div class="model-image">
-        <img src="c:\Users\Wind 10\Desktop\audi proiect\Audi Q4 Sportback e-tron.webp" alt="Audi Q4 Sportback e-tron"> 
+        <img src=".\audi proiect\Audi Q4 Sportback e-tron.webp" alt="Audi Q4 Sportback e-tron"> 
     </div>
 </section>
 <section class="model-section">
     <div class="model-image">
-        <img src="c:\Users\Wind 10\Desktop\audi proiect\Audi Q5 SUV.webp" alt="Audi Q5 SUV">
+        <img src=".\audi proiect\Audi Q5 SUV.webp" alt="Audi Q5 SUV">
     </div>
     <div class="model-text">
-        <h1>Audi Q5 SUV</h1>
+        <h2>Audi Q5 SUV</h2>
         <p class="subtitle">Departe de priviri indiscrete. Aproape de inimă. This is Audi.</p>
         <ul>
           <li>Aflat la a treia generație</li>
@@ -347,7 +450,7 @@
 </section>
 <section class="model-section">
     <div class="model-text">
-        <h1>Audi Q5 SUV e-hybrid</h1>
+        <h2>Audi Q5 SUV e-hybrid</h2>
         <p class="subtitle">Flexibilitate la un nou nivel.</p>
         <ul>
             <li>Puterea combinată a motorului electric și TFSI în două niveluri de putere</li>
@@ -356,15 +459,15 @@
         <a href="https://www.audi.ro/q5/q5-suv-e-hybrid/fascinatie" class="more-btn">Află mai multe</a>
     </div>
     <div class="model-image">
-        <img src="c:\Users\Wind 10\Desktop\audi proiect\Audi Q5 SUV e-hybrid.webp" alt="Audi Q5 SUV e-hybrid"> 
+        <img src=".\audi proiect\Audi Q5 SUV e-hybrid.webp" alt="Audi Q5 SUV e-hybrid"> 
     </div>
 </section>
 <section class="model-section">
     <div class="model-image">
-        <img src="c:\Users\Wind 10\Desktop\audi proiect\Audi Q5 Sportback.webp" alt="Audi Q5 Sportback">
+        <img src=".\audi proiect\Audi Q5 Sportback.webp" alt="Audi Q5 Sportback">
     </div>
     <div class="model-text">
-        <h1>Audi Q5 Sportback</h1>
+        <h2>Audi Q5 Sportback</h2>
         <p class="subtitle">SUV redefinit.</p>
         <ul>
           <li>Combinație între performanța puternică a unui SUV și versatilitatea necesară utilizării zilnice</li>
@@ -376,7 +479,7 @@
 </section>
 <section class="model-section">
     <div class="model-text">
-        <h1>Audi Q5 Sportback e-hybrid</h1>
+        <h2>Audi Q5 Sportback e-hybrid</h2>
         <p class="subtitle">Dinamic și eficient.</p>
         <ul>
           <li>Siluetă coupé dinamică, definită de linia elegantă a acoperișului</li>
@@ -386,15 +489,15 @@
         <a href="https://www.audi.ro/q5/q5-sportback-e-hybrid/fascinatie" class="more-btn">Află mai multe</a>
     </div>
     <div class="model-image">
-        <img src="c:\Users\Wind 10\Desktop\audi proiect\Audi Q5 Sportback e-hybrid.webp" alt="Audi Q5 Sportback e-hybrid"> 
+        <img src=".\audi proiect\Audi Q5 Sportback e-hybrid.webp" alt="Audi Q5 Sportback e-hybrid"> 
     </div>
 </section>
 <section class="model-section">
     <div class="model-image">
-        <img src="c:\Users\Wind 10\Desktop\audi proiect\Audi SQ5 SUV.webp" alt="Audi SQ5 SUV">
+        <img src=".\audi proiect\Audi SQ5 SUV.webp" alt="Audi SQ5 SUV">
     </div>
     <div class="model-text">
-        <h1>Audi SQ5 SUV</h1>
+        <h2>Audi SQ5 SUV</h2>
         <p class="subtitle">Un compliment pentru drum. This is Audi.</p>
         <ul>
           <li>Elemente specifice gamei S</li>
@@ -406,10 +509,10 @@
 </section>
 <section class="model-section">
     <div class="model-image">
-        <img src="c:\Users\Wind 10\Desktop\audi proiect\Audi SQ5 Sportback.webp" alt="Audi SQ5 Sportback">
+        <img src=".\audi proiect\Audi SQ5 Sportback.webp" alt="Audi SQ5 Sportback">
     </div>
     <div class="model-text">
-        <h1>Audi SQ5 Sportback</h1>
+        <h2>Audi SQ5 Sportback</h2>
         <p class="subtitle">Sportiv. Puternic. Dinamic.</p>
         <ul>
           <li>Un SUV cu alură de coupé, care combină stilul sportiv cu un spațiu generos și adaptabil.</li>
@@ -420,7 +523,7 @@
 </section>
 <section class="model-section">
     <div class="model-text">
-        <h1>Audi Q6 SUV e-tron</h1>
+        <h2>Audi Q6 SUV e-tron</h2>
         <p class="subtitle">Performanță electrică, la următorul nivel.</p>
         <ul>
           <li>Interior nou, digital, cu caracteristici precum afișaje panoramice, afișaj head-up cu realitate augmentată, asistent Audi, unitate de control a ușii șoferului, iluminare dinamică de interacțiune și sunet 3D cu difuzoare în tetiere</li>
@@ -429,15 +532,15 @@
         <a href="https://www.audi.ro/q6-e-tron/q6-e-tron-1/fascinatie" class="more-btn">Află mai multe</a>
     </div>
     <div class="model-image">
-        <img src="c:\Users\Wind 10\Desktop\audi proiect\Audi Q6 SUV e-tron.webp" alt="Audi Q6 SUV e-tron"> 
+        <img src=".\audi proiect\Audi Q6 SUV e-tron.webp" alt="Audi Q6 SUV e-tron"> 
     </div>
 </section>
 <section class="model-section">
     <div class="model-image">
-        <img src="c:\Users\Wind 10\Desktop\audi proiect\Audi Q6 Sportback e-tron.webp" alt="Audi Q6 Sportback e-tron">
+        <img src=".\audi proiect\Audi Q6 Sportback e-tron.webp" alt="Audi Q6 Sportback e-tron">
     </div>
     <div class="model-text">
-        <h1>Audi Q6 Sportback e-tron</h1>
+        <h2>Audi Q6 Sportback e-tron</h2>
         <p class="subtitle">Transformă energia în entuziasm.</p>
         <ul>
           <li>Fuziunea dintre apariția puternică a unui SUV, forma sportivă și designul electric orientat spre viitor</li>
@@ -449,7 +552,7 @@
 </section>
 <section class="model-section">
     <div class="model-text">
-        <h1>Audi SQ6 SUV e-tron </h1>
+        <h2>Audi SQ6 SUV e-tron </h2>
         <p class="subtitle">Performanță remarcabilă – pur electrică.</p>
         <ul>
           <li>Tracțiune impresionantă datorită performanțelor electrice quattro</li>
@@ -459,15 +562,15 @@
         <a href="https://www.audi.ro/q6-e-tron/sq6-e-tron/fascinatie" class="more-btn">Află mai multe</a>
     </div>
     <div class="model-image">
-        <img src="c:\Users\Wind 10\Desktop\audi proiect\Audi SQ6 SUV e-tron.webp" alt="Audi SQ6 SUV e-tron "> 
+        <img src=".\audi proiect\Audi SQ6 SUV e-tron.webp" alt="Audi SQ6 SUV e-tron "> 
     </div>
 </section>
 <section class="model-section">
     <div class="model-image">
-        <img src="c:\Users\Wind 10\Desktop\audi proiect\SQ6 Sportback e-tron.webp" alt="Audi SQ6 Sportback e-tron">
+        <img src=".\audi proiect\SQ6 Sportback e-tron.webp" alt="Audi SQ6 Sportback e-tron">
     </div>
     <div class="model-text">
-        <h1>Audi SQ6 Sportback e-tron</h1>
+        <h2>Audi SQ6 Sportback e-tron</h2>
         <p class="subtitle">Caracter sportiv electric într-o formă nouă.</p>
         <ul>
           <li>Autonomie extinsă, accelerație impresionantă și tracțiune excelentă</li>
@@ -479,7 +582,7 @@
 </section>
 <section class="model-section">
     <div class="model-text">
-        <h1>Audi Q7 SUV</h1>
+        <h2>Audi Q7 SUV</h2>
         <p class="subtitle">SUV de lux versatil.</p>
         <ul>
           <li>Interior spațios</li>
@@ -489,15 +592,15 @@
         <a href="https://www.audi.ro/q7/q7/fascinatie" class="more-btn">Află mai multe</a>
     </div>
     <div class="model-image">
-        <img src="c:\Users\Wind 10\Desktop\audi proiect\Audi Q7 SUV.webp" alt="Audi Q7 SUV"> 
+        <img src=".\audi proiect\Audi Q7 SUV.webp" alt="Audi Q7 SUV"> 
     </div>
 </section>
 <section class="model-section">
     <div class="model-image">
-        <img src="c:\Users\Wind 10\Desktop\audi proiect\Audi Q7 SUV TFSI e.webp" alt="Audi Q7 SUV TFSI e">
+        <img src=".\audi proiect\Audi Q7 SUV TFSI e.webp" alt="Audi Q7 SUV TFSI e">
     </div>
     <div class="model-text">
-        <h1>Audi Q7 SUV TFSI e</h1>
+        <h2>Audi Q7 SUV TFSI e</h2>
         <p class="subtitle">Dinamismul și eficiența, reunite.</p>
         <ul>
           <li>Prin combinarea unui motor TFSI puternic cu un motor electric eficient, Audi Q7 SUV TFSI e oferă o accelerație impresionantă</li>
@@ -509,7 +612,7 @@
 </section>
 <section class="model-section">
     <div class="model-text">
-        <h1>Audi SQ7 SUV</h1>
+        <h2>Audi SQ7 SUV</h2>
         <p class="subtitle">Performanță cu personalitate.</p>
         <ul>
           <li>Confort ridicat la condus și manevrabilitate sportivă</li>
@@ -519,15 +622,15 @@
         <a href="https://www.audi.ro/q7/sq7/fascinatie" class="more-btn">Află mai multe</a>
     </div>
     <div class="model-image">
-        <img src="c:\Users\Wind 10\Desktop\audi proiect\Audi SQ7 SUV.webp" alt="Audi SQ7 SUV"> 
+        <img src=".\audi proiect\Audi SQ7 SUV.webp" alt="Audi SQ7 SUV"> 
     </div>
 </section>
 <section class="model-section">
     <div class="model-image">
-        <img src="c:\Users\Wind 10\Desktop\audi proiect\Audi Q8 SUV.webp" alt="Audi Q8 SUV">
+        <img src=".\audi proiect\Audi Q8 SUV.webp" alt="Audi Q8 SUV">
     </div>
     <div class="model-text">
-        <h1>Audi Q8 SUV</h1>
+        <h2>Audi Q8 SUV</h2>
         <p class="subtitle">Model de top al familiei Q.</p>
         <ul>
           <li>Fuziunea dintre coupé de lux cu patru uși și un SUV de clasă mare</li>
@@ -539,7 +642,7 @@
 </section>
 <section class="model-section">
     <div class="model-text">
-        <h1>Audi Q8 SUV TFSI e</h1>
+        <h2>Audi Q8 SUV TFSI e</h2>
         <p class="subtitle">Dinamism și eficiență reunite.</p>
         <ul>
           <li>Sistemul de propulsie plug-in hybrid promite o experiență de condus captivantă</li>
@@ -549,15 +652,15 @@
         <a href="https://www.audi.ro/q8/q8-suv-tfsi-e/fascinatie" class="more-btn">Află mai multe</a>
     </div>
     <div class="model-image">
-        <img src="c:\Users\Wind 10\Desktop\audi proiect\Audi Q8 SUV TFSI e.webp" alt="Audi Q8 SUV TFSI e"> 
+        <img src=".\audi proiect\Audi Q8 SUV TFSI e.webp" alt="Audi Q8 SUV TFSI e"> 
     </div>
 </section>
 <section class="model-section">
     <div class="model-image">
-        <img src="c:\Users\Wind 10\Desktop\audi proiect\Audi SQ8 SUV.webp" alt="Audi SQ8 SUV">
+        <img src=".\audi proiect\Audi SQ8 SUV.webp" alt="Audi SQ8 SUV">
     </div>
     <div class="model-text">
-        <h1>Audi SQ8 SUV</h1>
+        <h2>Audi SQ8 SUV</h2>
         <p class="subtitle">Sportiv, coupé și SUV.</p>
         <ul>
           <li>Datorită suspensiei sale inovatoare, este stabil pe șosea și oferă un confort crescut în timpul mersului</li>
@@ -568,7 +671,7 @@
 </section>
 <section class="model-section">
     <div class="model-text">
-        <h1>Audi RS Q8</h1>
+        <h2>Audi RS Q8</h2>
         <p class="subtitle">Puternic. Sportiv. Suveran.</p>
         <ul>
           <li>Dinamică impresionantă de mașină sport</li>
@@ -578,15 +681,15 @@
         <a href="https://www.audi.ro/q8/rs-q8/fascinatie" class="more-btn">Află mai multe</a>
     </div>
     <div class="model-image">
-        <img src="c:\Users\Wind 10\Desktop\audi proiect\Audi RS Q8.webp" alt="Audi RS Q8">
+        <img src=".\audi proiect\Audi RS Q8.webp" alt="Audi RS Q8">
     </div>
 </section>
 <section class="model-section">
     <div class="model-image">
-         <img src="c:\Users\Wind 10\Desktop\audi proiect\Audi RS Q8 performance.webp" alt="Audi RS Q8 Performance">
+         <img src=".\audi proiect\Audi RS Q8 performance.webp" alt="Audi RS Q8 Performance">
     </div>
     <div class="model-text">
-        <h1>Audi RS Q8 Performance</h1>
+        <h2>Audi RS Q8 Performance</h2>
         <p class="subtitle">Performanța întâlnește eleganța.</p>
         <ul>
          <li>Motor V8 puternic</li>
@@ -595,5 +698,59 @@
         <a href="https://www.audi.ro/q8/rs-q8-performance/fascinatie" class="more-btn">Află mai multe</a>
     </div>
 </section>
+<div id="top"></div>
+
+<footer>
+    <a href="#top" class="back-to-top">
+        Înapoi la început <i class="arrow-up"></i>
+    </a>
+    <div class="footer-columns">
+        <div class="footer-column">
+            <h3>Modele</h3>
+            <a href="https://www.audi.ro/modele/toate-modelele">Toate Modelele</a>
+            <a href="https://www.audi.ro/modele/modele-sport-audi">Modele sport Audi</a>
+            <a href="https://www.audi.ro/modele/mobilitate-electrica/modele-electrice">Modele electrice</a>
+            <a href="https://www.audi.ro/modele/hibride-plug-in">Hibride plug-in</a>
+            <a href="https://www.audi.ro/modele/mobilitate-electrica">E-mobilitate</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Consiliere și achiziționare</h3>
+            <a href="https://www.audi.ro/modele/variante-caroserie/prezentare-generala">Variante de caroserie</a>
+            <a href="https://www.audiapproved.ro/">Audi rulate - Audi Approved :plus</a>
+            <a href="https://www.dasweltauto.ro/">Audi rulate - Das WeltAuto</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Service și accesorii</h3>
+            <a href="https://www.audi.ro/cautare-distribuitor">Căutare distribuitor</a>
+            <a href="https://www.audi.ro/service-si-accesorii/audi-accesorii">Accesorii originale Audi</a>
+            <a href="https://www.audi.ro/service-si-accesorii/audi-service">Servicii Audi</a>
+            <a href="https://www.audi.ro/service-si-accesorii/myaudi">myAudi</a>
+            <a href="https://www.audi.ro/service-si-accesorii/audi-connect">Audi connect</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Suport</h3>
+            <a href="https://www.audi.ro/contact">Contact</a>
+            <a href="https://www.audi.ro/universul-audi/newsletter-audi">Newsletter</a>
+            <a href="https://www.audi.ro/cautare-distribuitor">Căutare Distribuitor</a>
+        </div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+        © 2025. Audi Romania. Toate drepturile rezervate.
+    </div>
+
+    <div class="footer-link">
+        <a href="https://www.audi.ro/audi-impressum-notificari-legale">Date Legale</a>
+        <a href="https://www.audi.ro/protectia-datelor/protectia-datelor">Declarație privind protecția datelor</a>
+        <a href="https://www.audi.ro/modele/variante-caroserie/suv#lightbox=43bbc5a2-090c-429e-9ddd-b8c4352ee6d4">Directiva privind fișierele Cookie</a>
+        <a href="https://www.audi.ro/protectia-datelor/copyright">Copyright</a>
+        <a href="https://www.audi.ro/informatii-despre-siguranta-produsului">Informații despre siguranța produsului</a>
+        <a href="https://www.audi.ro/accesibilitate">Accesibilitate</a>
+        <a href="https://www.audi.ro/eu-data-act">EU Data Act</a>
+    </div>
+</footer>
 </body>
 </html>

@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* HEADER */
+header {
+    background-color: white;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.sigla {
+    width: 120px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* SECTIUNE MODELE SPORT */
+.modele-sport {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f2f2f2;
+}
+
+.modele-sport {
+    background-image: url('fundal.png'); 
+    background-size: cover; /* să acopere întreaga secțiune */
+    background-position: center;
+    padding: 40px;
+}
+
+.modele-sport h1 {
+    margin-bottom: 15px;
+}
+
+.modele-sport p {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    font-size: 16px;
+    color: #333;
+}
+
+/* CARDURI */
+.carduri {
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    width: 250px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    vertical-align: top;
+    background-color: white;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 10px 0 5px 0;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* FOOTER */
+footer {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+body {
+    background-color: #0f1217;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 40px;
+}
+
+.text-box {
+    max-width: 450px;
+}
+
+.text-box h1 {
+    margin-bottom: 20px;
+}
+
+.text-box button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: 1px solid white;
+    background: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.image-box img {
+    width: 500px;
+    border-radius: 20px;
+    display: block;
+}
+body {
+    background-color: #0f1217;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 40px;
+}
+
+.image-box img {
+    width: 600px;
+    border-radius: 25px;
+    display: block;
+}
+
+.text-box {
+    max-width: 450px;
+}
+
+.text-box h1 {
+    margin-bottom: 20px;
+}
+
+.text-box p {
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+.text-box button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: 1px solid white;
+    background: none;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+body {
+    background-color: #0f1217;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 50px;
+}
+
+.text-box {
+    max-width: 480px;
+}
+
+.text-box h1 {
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.text-box p {
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: 1px solid white;
+    background: none;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.image-box img {
+    width: 600px;
+    border-radius: 25px;
+    display: block;
+}
