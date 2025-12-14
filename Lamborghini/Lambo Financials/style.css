@@ -1,0 +1,263 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: "Lamborghini";
+    src: url("lambo-font.woff");
+}
+
+header{
+    background: #181818;
+     padding: 20px 0;
+   
+}
+.header { 
+      justify-content: space-between;
+ display:flex;
+  position: sticky;
+  align-items: center;
+top:0;
+}
+.menu-buton {
+    margin-left: 120px;
+background:none;
+    border: none;
+    color: white;
+    font-size: 18px;
+     cursor: pointer;    }
+.header-buton {
+    display: flex;
+    gap: 25px;       
+    margin-right: 100px; }
+
+.logo {
+    height: 60px;
+}
+.image-button img {
+    width: 25px;      
+    cursor: pointer; }
+
+.header-buton button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*HEADER END*/
+
+/*BODY*/
+ 
+body{
+    background-color: rgba(24, 24, 24);
+    aspect-ratio: 16:9;
+}
+
+header, body, footer{
+    font-family: 'Lamborghini';
+}
+
+.FINANCIALS{
+    background-image: url(backg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 95vh;
+    width: 99vw;
+    margin: 0
+}
+
+.home{
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-left: 250px;
+    padding-top: 95px;
+    color: #fff;
+}
+
+.fin{
+  color: #948b8be3;
+}
+
+.home > a{
+  color: #fff;
+}
+
+.minih{
+  display:flex;
+  flex-direction: column;
+  line-height: 0.8;
+  gap: 0.5px;
+    margin-bottom: 40px;
+    color: #fff;
+    font-weight: 800;
+    padding-left: 250px;
+    padding-top: 440px;
+    padding-bottom: 10px;
+    font-size: 1.32rem;
+    font-weight: bold;
+    font-family: 'Lamborghini';
+    letter-spacing: -3px;
+}
+
+.minih h3 {
+font-size: 1.2rem;
+letter-spacing: -0.1px;
+}
+
+.minih h1 {
+    transform: scaleY(2);
+    letter-spacing: -2.8px;
+}
+
+
+/* data */
+
+.financiar{
+  display: flex;
+  color: #fff;
+  padding-left: 350px;
+  padding-right: 350px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 60px;
+}
+
+.poze{
+  display:flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.scris{
+  padding-top: 150px;
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
+.scris > p{
+  font-size: medium;
+  color: #aaa;
+}
+
+.poze > img{
+  width: 450px;
+}
+
+
+/*BODY END*/
+
+/*butoane*/
+
+.butoane {
+display: flex;
+gap: 80px;
+justify-content: center;
+}
+
+.quart, .capital{
+width: 500px;
+height: 500px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: left;
+text-decoration: none;
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+font-family: 'Lamborghini';
+letter-spacing: 2px;
+color: white;
+}
+
+/* imagini diferite */
+.quart {
+background-image: url("logo.jpg");
+}
+
+.capital {
+background-image: url("llogo.jpg");
+}
+
+/*FOOTER*/
+
+.footer {
+background: #000;
+color: #fff;
+font-family: 'Lamborghini';
+padding: 60px 10%;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #aaa;
+}
+
+.footer-col h3 {
+  margin-bottom: 15px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  display: block;
+  color: #ccc;
+  padding: 2px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.footer-col h3:hover {
+   box-shadow: 0 0 0 2px #aaa;
+   cursor: pointer;
+   color: #aaa;
+}
+
+.footer-avertisment p
+{
+  text-align:left;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.social .icons i {
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.social .icons i:hover {
+  color: #aaa;
+     box-shadow: 0 0 0 2px #aaa;
+}
+
+.footer-mid {
+  border-bottom: 1px solid #aaa;
+  padding: 25px 0;
+  font-size: 15px;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.footer-bottom {
+  text-align: left;
+  font-size: 12px;
+  color: #aaa;
+  padding-top: 25px;
+  line-height: 1.4;
+}
+
+.footer-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60px;
+  margin-top: 25px;
+}
