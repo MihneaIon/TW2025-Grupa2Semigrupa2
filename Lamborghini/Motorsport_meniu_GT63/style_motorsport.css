@@ -1,0 +1,498 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #131313;
+    color:#ffffff;
+    
+}
+.logo{
+    text-align: center;
+    
+size: 1Zpx;
+}
+   
+
+.buton_x:hover {
+    opacity: 0.7;
+    
+}
+
+
+.topbar img {
+    height: 20px;
+}
+
+.topbar .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.buton_x {
+    
+    cursor: pointer;
+}
+
+.menu_label {
+    font-size: 14px;
+    font-weight: bold;
+    cursor:pointer;
+    
+    
+    
+}
+.link_meniu
+{
+    text-decoration: none;
+    color: white;
+}
+
+.link_meniu:hover{
+    opacity: 0.7;
+}
+
+.right-icons .icon {
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.icon:hover {
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:   Arial, sans-serif;
+    
+}
+
+.fundal {
+    width:100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 60px;
+    background: url("temerario_GT3.jpg") center/cover;
+      aspect-ratio: 35 / 19;
+      min-height:50%;
+
+}
+
+
+
+.continut_motorsport {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.rand_titlu_si_buton {
+   width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        margin-bottom: 40px;
+
+}
+
+
+.titlu_mic {
+        font-family:"Oswald";
+
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    opacity: 0.85;
+    margin-bottom: 10px;
+    color:white;
+
+}
+.titlu {
+    font-family:"Oswald";
+    font-size: 70px;
+    font-weight: 1000;
+    color:rgb(255, 255, 255);
+        letter-spacing: 0px;
+        
+     
+
+}
+/* Buton */
+.buton_galben {
+    margin:20px;
+    padding: 20px 25px;
+    background: #fdc408;
+    color: #000;
+    font-weight:bold;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 0px;
+        font-family:"Oswald";
+        letter-spacing:1px;
+
+
+    
+    
+}
+
+.buton_galben:hover {
+    background: #c19400;
+    color: #000000;}
+
+
+
+/*sectiune news*/
+
+
+.motorsport_news {
+    background: #1f1f1f;
+    color:white;
+    padding: 80px 60px;
+        text-transform:uppercase;
+}
+
+.titlu_news {
+    font-size: 32px;
+    font-family: "Oswald";
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    
+}
+
+
+figcaption{
+    margin-top: 10px;
+    font-size:10px;
+    font-family: "Oswald";
+    letter-spacing: 1px;    
+    text-align:left;
+}
+
+/* 1x3 poze */
+.news-grid {
+
+
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+      max-width: 1800px;
+        align-items: center;
+
+
+  margin: auto;
+
+
+
+    
+
+}
+
+
+
+
+
+.news-image img {
+      aspect-ratio: 1 / 1;      
+    object-fit: cover;
+
+   width: 100%;            
+  height: auto;
+  transition: transform 0.2s ease;
+  
+
+
+
+
+  
+}
+
+.news-image:hover img {
+    transform: scale(1.03);
+}
+
+.news-text {
+    
+    margin-top: 15px;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+.titlu_championships {
+    font-size: 32px;
+    margin-top:50px;
+    margin-bottom: 100px;
+    letter-spacing: 1px;
+font-weight: 700;
+    color:rgb(0, 0, 0);
+        letter-spacing: 1px;    
+}
+.championships {
+    background: #ffffff;
+    color:rgb(0, 0, 0);
+    padding: 0px 100px;
+        text-transform:uppercase;
+        
+}
+
+
+.championships-grid {
+  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    max-width:1200px;
+    align-items:center;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.patrat_imagine {
+    position: relative;
+    display: inline-block;
+
+       
+   width: 100%;            
+  height: auto;
+  transition: transform 0.2s ease;
+  
+
+}
+
+.patrat_imagine img {
+     aspect-ratio: 1 / 1.1;      
+    object-fit: cover;
+
+   width: 100%;            
+  height: auto;
+  
+}
+
+
+
+
+
+
+
+
+
+/* championshis */
+.image-title {
+    position: absolute;
+    top: 20px;          
+    left: 20px;         
+    color: white;
+    font-size: 28px;
+    font-family: "Oswald";
+    letter-spacing: 1px;
+}
+
+.image-button {
+    position: absolute;
+    bottom: 20px;      
+    left: 20px;       
+    padding: 20px 20px;
+    margin:20px 10px;
+    background: #ffffff;
+    color: black;
+    font-family: "Oswald";
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+        max-width: 50%;
+        max-height:50%;
+        
+
+
+}
+
+.image-button:hover {
+    background: #cfcfcf;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.text_championship h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.text_championship p {
+  max-width: 540px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.buton_championship {
+  display: inline-block;
+  padding: 19px 22px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  font-size:10px;
+  font-weight:900;
+  text-transform:uppercase;
+  
+}
+
+.buton_championship:hover {
+  background: #333;
+}
+
+
+
+.dreptunghi_imagine img {
+  width: 100%;
+    aspect-ratio: 1 / 1.1;
+
+  height: 100%;
+  object-fit: cover;
+  padding: 0px 0px 0px 0px;
+}
+
+
+
+
+
+.text_si_imagine_dreapta{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+
+  margin: 50px auto;
+  max-width: 1200px;
+  padding: 30px 0px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Partneri */
+
+
+
+
+
+
+
+.partners {
+    text-align: center;
+    padding: 20px 20px;
+    
+}
+
+.partners_titlu {
+    font-size: 40px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    
+}
+
+.partners-grid {
+
+  margin: auto;
+max-width:1000px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+}
+
+.partner-buton {
+     padding: 10px;
+}
+
+.partner-buton img {
+    max-width: 190px;
+    height: auto;
+}
+
+
+

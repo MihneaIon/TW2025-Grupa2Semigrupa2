@@ -1,0 +1,222 @@
+body {
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #212121;
+        color:#ffffff;
+
+}
+.logo{
+    text-align: center;
+    
+size: 1Zpx;
+}
+   
+
+.buton_x:hover {
+    opacity: 0.7;
+    
+}
+
+
+.topbar img {
+    height: 20px;
+}
+
+.topbar .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.buton_x {
+    cursor: pointer;
+}
+
+.menu-label {
+    font-size: 14px;
+    font-weight: bold;
+    cursor:pointer;
+    text-decoration: none;
+    
+}
+.menu-label:hover{
+    opacity: 0.7;
+}
+
+.right-icons .icon {
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.icon:hover {
+    opacity: 0.7;
+}
+
+/* meniu(principale) */
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 50px;
+    gap: 40px;
+}
+
+.column {
+    flex: 1;
+}
+
+.menu-section {
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+        border-bottom: 1px solid #838181;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+.linie {
+    border: 0;
+    border-top: 1px solid #e3e3e3;
+    margin: 0px 0px 40px 0px;
+}
+
+
+
+
+
+
+
+/* DETAILS GRID */
+.secondary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 50px 40px;
+    gap: 20px 40px;
+}
+
+
+
+
+
+
+
+
+
+.secondary {
+    font-size: 14px;
+    cursor: pointer;
+    border-bottom: 1px solid #333;
+    padding-bottom: 8px;
+}
+
+
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px 40px;
+    font-size: 14px;
+}
+
+.languages {
+    cursor: pointer;
+}
+
+.footer-dreapta {
+    display: flex;
+    gap: 30px;
+}
+
+.option {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.option:hover, .languages:hover {
+    opacity: 0.7;
+}
+
+.menu-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-section a:hover {
+    opacity: 0.7;
+}
+
+
+
+
+
+/*  Submeniu_modele   */
+
+.models {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 70px;
+}
+
+.models-left {
+    flex: 1;
+}
+
+.models-right {
+    display: flex;
+    align-items: flex-start;
+}
+
+.models-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.models-list li {
+    font-size: 16px;
+    margin: 22px 0;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.models-list li:hover {
+    opacity: 0.7;
+}
+
+.overview {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.overview:hover {
+    opacity: 0.7;
+}
+
+
