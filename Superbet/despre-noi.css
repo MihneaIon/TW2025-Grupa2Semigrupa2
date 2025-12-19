@@ -1,0 +1,161 @@
+body {
+  background: #f6f7f8;
+  font-family: 'Inter', sans-serif;
+}
+
+
+.about-container {
+  max-width: 1100px;
+  margin: 30px auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+
+.about-banner img {
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+
+
+.about-content h2 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.about-content h3 {
+  font-size: 16px;
+  margin-top: 25px;
+  font-weight: 800;
+}
+
+.about-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.logo{
+    font-weight: bold;}
+
+.barasus {
+    font-weight: bold;
+    top: 0px;
+    position: sticky;
+    background: #f7eaea;
+    padding: 10px 25px;
+    padding: 10px 15px;}
+
+.continut {
+    background: #fff;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);}
+
+.containerlogo {
+    flex: 0 0 auto;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 2px;}
+
+.dreaptah {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #e30613;
+    margin-right: 20px;
+    }
+
+.meniuh {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.95em;}
+
+.meniuh a {
+    text-decoration: none;
+    color: #111;
+    position: relative;
+    padding: 6px 0;
+}
+
+.numar {
+    background: red;
+    color: white;
+    font-size: 0.7em;
+    padding: 2px 6px;
+    border-radius: 10px;
+    margin-left: 4px;
+    font-weight: bold;}
+
+.despartire {
+    width: 1px;
+    height: 18px;
+    background: #ccc;
+    margin: 0 8px;}
+
+.emoji {
+    font-size: 1em;
+    margin-right: 4px;}
+
+.meniuutilizator {
+    display: flex;
+    align-items: center;
+    gap: 15px;}
+
+.cauta {
+    background: #f0f0f0;
+    border: none;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    font-size: 1.1em;
+    cursor: pointer;}
+
+.cauta:hover {
+     background: #e0e0e0;}
+
+.depunere {
+    background: #f0f0f0;
+    color: #111;
+    border: none;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;}
+
+.depunere:hover {
+    background: #e0e0e0;}
+
+.utilizator {
+    display: flex;
+    align-items: center;
+    gap: 8px;}
+
+.nume {
+    font-weight: 500;}
+
+.balanta {
+    font-size: 0.85em;
+    color: #666;
+}
+
+.poza {width: 32px;
+    height: 32px;
+    background: url('https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png') no-repeat center/cover; 
+    border-radius:50%;
+  }
